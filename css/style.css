@@ -225,7 +225,7 @@ header .container h1 {
     z-index: 0;
     background-image: url(../assets/bg/vampire.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     transition: 0.5s;
 }
 .card-box {
