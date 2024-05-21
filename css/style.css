@@ -291,6 +291,7 @@ header h1 {
     background: linear-gradient(60deg, #ccc, #eee, #ccc, #ccc, #ccc, white, #eee, #aaa);
     margin: 0 auto;
     padding: 5px;
+    font-size: 1em;
 }
 #vampire {
     background-image: url(../assets/vampire.jpg);
@@ -555,7 +556,7 @@ footer .container {
         width: 70%;
     }
     .carta-status {
-        font-size: 14px;
+        font-size: 0.9em;
     }
 }
 
