@@ -10,7 +10,7 @@ $(() => {
         if(tela.idioma){
             tela.idioma = false;
             $('#idioma-ingles').remove();
-            $('.idiomas').fadeOut(500);
+            $('.idiomas-wraper').fadeOut(500);
             setTimeout(() => {
                 $('#idioma-portugues').fadeIn(500);
                 tela.main = true
@@ -24,7 +24,7 @@ $(() => {
         if(tela.idioma){
             tela.idioma = false;
             $('#idioma-portugues').remove();
-            $('.idiomas').fadeOut(500);
+            $('.idiomas-wraper').fadeOut(500);
             setTimeout(() => {
                 $('#idioma-ingles').fadeIn(500);
                 tela.main = true;
