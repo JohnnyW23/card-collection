@@ -159,14 +159,12 @@ $(() => {
         if(!flipped){
             flipped = true;
             $(this).find('.carta').css('transform', 'rotateY(180deg)');
-            $(this).find('.carta-info-wrap').css('top', '4px').css('left', '5px');
             setTimeout(() => {
                 $(this).find('.carta-back').css('display', 'block')
             }, 130);
         }else{
             flipped = false;
             $(this).find('.carta').css('transform', 'rotateY(0deg)');
-            $(this).find('.carta-info-wrap').css('top', '4px').css('left', '5px');
             setTimeout(() => {
                 $(this).find('.carta-back').css('display', 'none')
             }, 130);

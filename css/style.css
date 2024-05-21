@@ -200,10 +200,11 @@ header h1 {
 .carta-info-wrap {
     width: 286px;
     height: 488px;
-    top: 6px;
-    left: 7px;
     border-radius: 25px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .carta-back {
     width: 280px;
