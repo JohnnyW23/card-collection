@@ -453,6 +453,7 @@ footer .container {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 20px;
 }
 .clear {
     clear: both;
