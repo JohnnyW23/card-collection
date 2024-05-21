@@ -290,6 +290,7 @@ header h1 {
     background: linear-gradient(60deg, #ccc, #eee, #ccc, #ccc, #ccc, white, #eee, #aaa);
     margin: 0 auto;
     padding: 5px;
+    overflow: hidden;
 }
 #vampire {
     background-image: url(../assets/vampire.jpg);
