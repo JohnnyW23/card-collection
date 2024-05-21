@@ -213,8 +213,9 @@ header h1 {
     background-size: cover;
     background-position: center;
     position: absolute;
-    top: 3px;
-    left: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
     display: none;
     box-shadow: inset 0 0 50px black,
@@ -290,7 +291,6 @@ header h1 {
     background: linear-gradient(60deg, #ccc, #eee, #ccc, #ccc, #ccc, white, #eee, #aaa);
     margin: 0 auto;
     padding: 5px;
-    overflow: hidden;
 }
 #vampire {
     background-image: url(../assets/vampire.jpg);
