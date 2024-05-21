@@ -553,6 +553,9 @@ footer .container {
         font-size: 14px;
         width: 70%;
     }
+    .carta-status {
+        font-size: 14px;
+    }
 }
 
 
@@ -625,7 +628,6 @@ footer .container {
     .carta-status {
         width: 97%;
         height: 26.5%;
-        font-size: 15px;
     }
     .voltar-btn-wraper {
         bottom: 35px;
