@@ -151,7 +151,8 @@ $(() => {
     })
 
     $(window).resize(function() {
-        location.reload();
+        if($('body').width() > 1024)
+            location.reload();
     });
 
     $(document).on("click", ".selected", function(){
