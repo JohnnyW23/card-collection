@@ -13,25 +13,32 @@ html, body {
     height: 100%;
     background-color: rgb(20, 20, 20);
 }
-header {
+header, footer {
     width: 100%;
     height: 60px;
-    background: linear-gradient(90deg, #222, #555, #777, #777, #777, #777, #777, #777, #777, #777, #ccc, #fff, #ccc, #777, #777, #777, #555, #222);
+    background: linear-gradient(90deg, #111, #222, #333, #333, #333, #333, #333, #333, #333, #333, #555, #888, #555, #333, #333, #333, #222, #111);
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 .container {
     width: 100%;
+    height: 100%;
     max-width: 1200px;
     padding: 0 2%;
     margin: 0 auto;
     text-align: center;
 }
-header h1 {
+
+header .container h1 {
+    text-shadow: 0 0 20px black,
+                 0 0 50px black;
     color: white;
-    text-shadow: 2px 2px 10px black;
-    display: inline-block;
-    margin-top: 10px;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 .main-wraper {
     min-height: 700px;
@@ -292,6 +299,7 @@ header h1 {
     margin: 0 auto;
     padding: 5px;
     font-size: 1em;
+    text-align: center;
 }
 #vampire {
     background-image: url(../assets/vampire.jpg);
@@ -315,7 +323,6 @@ header h1 {
     cursor: pointer;
 }
 .arrow {
-    z-index: 1;
     position: relative;
 }
 .arrow-circle-wrap {
@@ -381,7 +388,6 @@ header h1 {
     text-align: center;
     border-radius: 40px;
     cursor: pointer;
-    z-index: 2;
 }
 .voltar-btn {
     position: absolute;
@@ -398,17 +404,13 @@ header h1 {
     line-height: 70px;
 }
 
+.btn {
+    z-index: 2;
+}
 .btn:active {
     box-shadow: 0 0 20px white;
 }
 
-footer {
-    width: 100%;
-    height: 60px;
-    background: linear-gradient(90deg, #111, #222, #333, #333, #333, #333, #333, #333, #333, #333, #555, #fff, #555, #333, #333, #333, #222, #111);
-    position: relative;
-    z-index: 1;
-}
 footer .container {
     position: relative;
 }
@@ -555,9 +557,6 @@ footer .container {
         font-size: 14px;
         width: 70%;
     }
-    .carta-status {
-        font-size: 0.9em;
-    }
 }
 
 
@@ -630,6 +629,7 @@ footer .container {
     .carta-status {
         width: 97%;
         height: 26.5%;
+        font-size: 0.9em;
     }
     .voltar-btn-wraper {
         bottom: 35px;
@@ -639,6 +639,5 @@ footer .container {
 @media screen and (max-width: 300px) {
     header .container h1 {
         font-size: 25px;
-        margin: 0;
     }
 }
