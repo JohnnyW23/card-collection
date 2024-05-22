@@ -631,15 +631,15 @@ footer .container {
     }
     .carta-wraper {
         width: 250px;
-        height: calc(500px - 500px / 6);
+        height: calc(500px - 500px / 6 + 2px);
     }
     .carta {
         width: 250px;
         height: calc(500px - 500px / 6 + 2px);
     }
     .carta-info-wrap {
-        width: 95%;
-        height: 98%;
+        width: 237.5px;
+        height: 408.3px;
     }
     .carta-img {
         width: 97%;
@@ -659,7 +659,7 @@ footer .container {
     .carta-status {
         width: 97%;
         height: 26.5%;
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
     .voltar-btn-wraper {
         bottom: 35px;
