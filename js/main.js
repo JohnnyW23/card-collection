@@ -8,8 +8,10 @@ tela = {
 $(() => {
     $('#flag-pt').click(function(){
         if(tela.idioma){
-            tela.idioma = false;
+            tela.idioma = 'portugues';
             $('#idioma-ingles').remove();
+
+            construirCartas();
             $('.idiomas-wraper').fadeOut(500);
             setTimeout(() => {
                 $('#idioma-portugues').fadeIn(500);
@@ -22,8 +24,10 @@ $(() => {
 
     $('#flag-ing').click(function(){
         if(tela.idioma){
-            tela.idioma = false;
+            tela.idioma = 'ingles';
             $('#idioma-portugues').remove();
+            construirCartas();
+
             $('.idiomas-wraper').fadeOut(500);
             setTimeout(() => {
                 $('#idioma-ingles').fadeIn(500);

@@ -1,6 +1,41 @@
+function construirCartas(){
+    for(i = 0; i < cartas.length; i++){
+        let mensagem;
+        if(tela.idioma == 'portugues')
+            mensagem = cartas[i].mensagem.portugues;
+        else if(tela.idioma == 'ingles')
+            mensagem = cartas[i].mensagem.ingles;
+
+        $('.card-box').append('\
+        <div class="carta-wraper">\
+            <div class="carta">\
+                <div class="carta-info-wrap ' + cartas[i].raridade + '">\
+                    <div class="carta-back" style="background-image: ' + cartas[i].backgroundImage_Back + '">\
+                        <div class="carta-back-brilho"></div>\
+                    </div>\
+                    <div class="carta-img" id="' + cartas[i].id + '" style="background-image: ' + cartas[i].backgroundImage_Front + '">\
+                        <div class="carta-img-brilho"></div>\
+                        <h3 class="carta-nome">' + cartas[i].nome + '</h3>\
+                    </div>\
+                    <div class="card-divider"></div>\
+                    <div class="carta-status">\
+                        <span>' + mensagem + '</span>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>')
+    }
+
+    $('.carta-wraper').eq(0).addClass('selected');
+    $('.carta-wraper').eq(1).addClass('next');
+    $('.carta-wraper').eq($('.carta-wraper').length - 1).addClass('prev');
+}
+
+
 function ativarCardBox (){
     var transition = false;
     var flipped = false;
+    var flipping = false
 
     $(() => {
         var graus = 180;
@@ -150,24 +185,25 @@ function ativarCardBox (){
             }
         })
 
-        $(window).resize(function() {
-            if($('body').width() > 1024)
-                location.reload();
-        });
-
         $(document).on("click", ".selected", function(){
-            if(!flipped){
-                flipped = true;
-                $(this).find('.carta').css('transform', 'rotateY(180deg)');
+            if(!flipping){
+                flipping = true
+                if(!flipped){
+                    flipped = true;
+                    $(this).find('.carta').css('transform', 'rotateY(180deg)');
+                    setTimeout(() => {
+                        $(this).find('.carta-back').css('display', 'block')
+                    }, 130);
+                }else{
+                    flipped = false;
+                    $(this).find('.carta').css('transform', 'rotateY(0deg)');
+                    setTimeout(() => {
+                        $(this).find('.carta-back').css('display', 'none')
+                    }, 130);
+                }
                 setTimeout(() => {
-                    $(this).find('.carta-back').css('display', 'block')
-                }, 130);
-            }else{
-                flipped = false;
-                $(this).find('.carta').css('transform', 'rotateY(0deg)');
-                setTimeout(() => {
-                    $(this).find('.carta-back').css('display', 'none')
-                }, 130);
+                    flipping = false
+                }, 500);
             }
         })
 
@@ -187,6 +223,11 @@ function ativarCardBox (){
                     $('.bg-img').css('background-image', 'url(assets/bg/vampire.jpg)')
                 }, 1000);
             }
+        })
+
+        $(window).resize(function(){
+            $('.next').css('left', 'calc(100% + 200px)');
+            $('.prev').css('left', '-200px');
         })
     })
 }
