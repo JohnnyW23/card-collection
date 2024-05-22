@@ -1,7 +1,7 @@
 :root {
     --cor: rgb(20, 20, 20);
     --transparent: rgba(0, 0, 0, 0.1);
-    --brilho: rgba(150, 150, 150, 0.6);
+    --brilho: rgba(150, 150, 150, 0.4);
 }
 * {
     margin: 0;
@@ -24,7 +24,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../assets/idiomas-bg.jpg);
+    background-image: url(../assets/bg/idiomas-bg.jpg);
     background-size: cover;
     background-position: center;
     filter: blur(3px) brightness(60%);
@@ -268,9 +268,7 @@ header .container h1 {
     transform: translate(-50%, -50%);
     z-index: 1;
     display: none;
-    box-shadow: inset 0 0 50px black,
-    inset 0 0 100px black,
-    inset 0 0 150px black;
+    box-shadow: inset 0 0 150px black;
 }
 .carta-back-brilho {
     position: absolute;
@@ -377,12 +375,12 @@ header .container h1 {
     background: linear-gradient(45deg, #ccc, #999, wheat, wheat, #999, #ccc);
 }
 .right-arrow {
-    background-image: url(../assets/arrow.svg);
+    background-image: url(../assets/svg/arrow.svg);
     width: 70%;
     height: 70%;
 }
 .left-arrow {
-    background-image: url(../assets/arrow.svg);
+    background-image: url(../assets/svg/arrow.svg);
     width: 70%;
     height: 70%;
 }

@@ -10,10 +10,10 @@ function construirCartas(){
         <div class="carta-wraper">\
             <div class="carta">\
                 <div class="carta-info-wrap ' + cartas[i].raridade + '">\
-                    <div class="carta-back" style="background-image: ' + cartas[i].backgroundImage_Back + '">\
+                    <div class="carta-back" style="background-image: url(../assets/card-back/' + cartas[i].classe + '.jpg)">\
                         <div class="carta-back-brilho"></div>\
                     </div>\
-                    <div class="carta-img" id="' + cartas[i].id + '" style="background-image: ' + cartas[i].backgroundImage_Front + '">\
+                    <div class="carta-img" id="' + cartas[i].id + '" style="background-image: url(../assets/card-front/' + cartas[i].id + '.jpg)">\
                         <div class="carta-img-brilho"></div>\
                         <h3 class="carta-nome">' + cartas[i].nome + '</h3>\
                     </div>\
@@ -220,7 +220,6 @@ function ativarCardBox (){
                 }, 500);
                 setTimeout(() => {
                     $('.card-box').html(tela.colecaoInitial)
-                    $('.bg-img').css('background-image', 'url(assets/bg/vampire.jpg)')
                 }, 1000);
             }
         })

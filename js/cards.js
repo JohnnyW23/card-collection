@@ -1,9 +1,8 @@
 cartas = [
     {
         raridade: 'legendary',
-        backgroundImage_Back: 'url(assets/card-back/vampire-back.jpg)',
-        id: 'vampire',
-        backgroundImage_Front: 'url(../assets/card-front/vampire.jpg)',
+        classe: 'vampire',
+        id: 'card0',
         nome: 'Johnny Valentine',
         mensagem: {
             portugues: 'Uma longa noite você pode aguardar. Caos e destruição esperam teu acordar. Atente-se ao redor antes do amanhecer. De nada adianta, você vai perecer!',
@@ -11,9 +10,8 @@ cartas = [
         }
     },{
         raridade: 'epic',
-        backgroundImage_Back: 'url(assets/card-back/fairy-back.jpg)',
-        id: 'fairy',
-        backgroundImage_Front: 'url(../assets/card-front/fairy.jpg)',
+        classe: 'fairy',
+        id: 'card1',
         nome: 'Elizash Bury',
         mensagem: {
             portugues: 'Nas asas da lua, danço com véu de pureza e intensidade. Sou guardiã dos sentimentos profundos, sussurrando segredos às estrelas. Meus olhos são as constelações.',
@@ -21,9 +19,8 @@ cartas = [
         }
     },{
         raridade: 'super-rare',
-        backgroundImage_Back: 'url(assets/card-back/fairy2-back.jpg)',
-        id: 'fairy2',
-        backgroundImage_Front: 'url(../assets/card-front/fairy2.jpg)',
+        classe: 'fairy',
+        id: 'card2',
         nome: 'Becky Flowers',
         mensagem: {
             portugues: 'A alegria e a leveza são as cores e pinceladas que transformam a vida em arte, enquanto a bondade é o verniz que protege e dá brilho à nossa humanidade compartilhada.',
@@ -31,9 +28,8 @@ cartas = [
         }
     },{
         raridade: 'rare',
-        backgroundImage_Back: 'url(assets/card-back/warrior-back.jpg)',
-        id: 'warrior',
-        backgroundImage_Front: 'url(../assets/card-front/warrior.jpg)',
+        classe: 'warrior',
+        id: 'card3',
         nome: 'Peter Falkburg',
         mensagem: {
             portugues: 'Contra o caos, a arte é minha espada, Pintando um futuro onde a paz é abraçada. Na tela da vida, traço meu destino, Um mundo sem guerra, meu desejo divino.',
@@ -41,9 +37,8 @@ cartas = [
         }
     },{
         raridade: 'common',
-        backgroundImage_Back: 'url(assets/card-back/fighter-back.jpg)',
-        id: 'fighter',
-        backgroundImage_Front: 'url(../assets/card-front/fighter.jpg)',
+        classe: 'fighter',
+        id: 'card4',
         nome: 'Fabian Temphest',
         mensagem: {
             portugues: 'Cada soco é um passo mais perto. Cada adversário, um obstáculo a ser esmagado. Minha missão? Vencer, custe o que custar. No ringue, sou eu contra o mundo.',
@@ -51,9 +46,8 @@ cartas = [
         }
     },{
         raridade: 'super-rare',
-        backgroundImage_Back: 'url(assets/card-back/sniper-back.jpg)',
-        id: 'sniper',
-        backgroundImage_Front: 'url(../assets/card-front/sniper.jpg)',
+        classe: 'shooter',
+        id: 'card5',
         nome: 'Lilith Sharpwind',
         mensagem: {
             portugues: 'A bala repousa na câmara, silenciosa. Sabe que o momento certo virá, quando o alvo estiver alinhado. Assim sou eu, esperando pacientemente para liberar a bala definitiva.',

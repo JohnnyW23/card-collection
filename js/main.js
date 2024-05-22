@@ -108,6 +108,7 @@ $(() => {
             if(!tela.colecao){
                 tela.colecao = true;
                 tela.main = false;
+                $('.bg-img').css('background-image', 'url(assets/bg/' + cartas[0].id + '.jpg)');
                 tela.colecaoInitial = $('.card-box').html();
     
                 $('.main-wraper').fadeOut(500);
