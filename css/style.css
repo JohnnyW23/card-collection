@@ -446,23 +446,23 @@ footer .container {
     height: 100%;
     text-align: left;
     float: left;
+    position: relative;
 }
-.github-logo {
-    width: 45px;
-    height: 45px;
+.link-logo-img {
+    width: 30px;
+    height: 30px;
     background-size: cover;
 }
 .lkdn-logo {
-    width: 45px;
-    height: 45px;
-    background-size: cover;
     background-color: #333;
     border-radius: 5px;
 }
 .link-logo {
     display: inline-block;
     padding-right: 15px;
-    padding-top: 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .autor {
     width: 80%;
@@ -481,6 +481,7 @@ footer .container {
     left: 50%;
     transform: translateX(-50%);
     font-size: 20px;
+    font-weight: 200;
 }
 .clear {
     clear: both;
@@ -563,13 +564,18 @@ footer .container {
         width: 100%;
         text-align: center;
     }
+    .link-logo {
+        top: 7px;
+        transform: none;
+    }
     .autor {
         width: 100%;
         text-align: center;
     }
     .autor h2 {
         position: static;
-        margin-left: 50%;
+        margin: 5px auto;
+        transform: none;
     }
 }
 
