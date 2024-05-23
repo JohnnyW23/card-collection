@@ -3,7 +3,17 @@ tela = {
     main: false,
     sobre: false,
     colecao: false,
-    portugues: {
+}
+
+traducao = [
+    {
+        scroll: {
+            titulo: 'Tudo de resume a uma palavra...',
+            paragrafos: [
+                'Relaxa! Daqui a pouquinho eu edito esse pergaminho e conto pra vocês sobre esse projeto.',
+                'Preciso ir pra aula. Fui!'
+            ]
+        },
         sobre: [
             'SOBRE O PROJETO',
             'O que significa esse projeto e o porquê dele ter sido feito.'
@@ -18,7 +28,14 @@ tela = {
         ],
         voltar_btn: 'VOLTAR'
     },
-    ingles: {
+    {
+        scroll: {
+            titulo: 'The whole reason in a nutshell...',
+            paragrafos: [
+                "Hold on! I'll soon edit this scroll and tell you guys about this project.",
+                "I need to go to the class now. See ya!"
+            ]
+        },
         sobre: [
             'ABOUT THE PROJECT',
             'What is the meaning of this project and why I made it.'
@@ -33,7 +50,7 @@ tela = {
         ],
         voltar_btn: 'RETURN'
     }
-}
+]
 
 $(() => {
     $('#flag-pt').click(function(){
@@ -72,38 +89,70 @@ $(() => {
 
     function traduzirMain(){
         if(tela.idioma == 'portugues'){
-            $('#sobre .sessao-descricao').append('\
-                <h2>' + tela.portugues.sobre[0] + '</h2>\
-                <p>' + tela.portugues.sobre[1] + '</p>\
-            ');
-            $('#colecao .sessao-descricao').append('\
-                <h2>' + tela.portugues.colecao[0] + '</h2>\
-                <p>' + tela.portugues.colecao[1] + '</p>\
-            ');
-            $('#github .sessao-descricao').append('\
-                <h2>' + tela.portugues.github[0] + '</h2>\
-                <p>' + tela.portugues.github[1] + '</p>\
-            ');
-            $('.voltar-btn').append('<h2>' + tela.portugues.voltar_btn  + '</h2>');
+            traduzir(0);
 
         }else if(tela.idioma == 'ingles'){
-            $('#sobre .sessao-descricao').append('\
-                <h2>' + tela.ingles.sobre[0] + '</h2>\
-                <p>' + tela.ingles.sobre[1] + '</p>\
-            ');
-            $('#colecao .sessao-descricao').append('\
-                <h2>' + tela.ingles.colecao[0] + '</h2>\
-                <p>' + tela.ingles.colecao[1] + '</p>\
-            ');
-            $('#github .sessao-descricao').append('\
-                <h2>' + tela.ingles.github[0] + '</h2>\
-                <p>' + tela.ingles.github[1] + '</p>\
-            ');
-            $('.voltar-btn').append('<h2>' + tela.ingles.voltar_btn  + '</h2>');
+            traduzir(1);
         }
     }
 
+    function traduzir(num){
+        $('#sobre .sessao-descricao').append('\
+            <h2>' + traducao[num].sobre[0] + '</h2>\
+            <p>' + traducao[num].sobre[1] + '</p>\
+        ');
+        $('#colecao .sessao-descricao').append('\
+            <h2>' + traducao[num].colecao[0] + '</h2>\
+            <p>' + traducao[num].colecao[1] + '</p>\
+        ');
+        $('#github .sessao-descricao').append('\
+            <h2>' + traducao[num].github[0] + '</h2>\
+            <p>' + traducao[num].github[1] + '</p>\
+        ');
+        $('.voltar-btn').append('<h2>' + traducao[num].voltar_btn  + '</h2>');
+        $('.scroll-escritos').append('\
+        <h1>' + traducao[num].scroll.titulo + '</h1>\
+        <br><br>');
+        for(i = 0; i < traducao[num].scroll.paragrafos.length; i++){
+            $('.scroll-escritos').append('\
+            <p>' + traducao[num].scroll.paragrafos[i] + '</p>\
+            <br>');
+        };
+        $('.scroll-escritos').append('<img id="retornar" src="assets/svg/voltar.svg" width="20px" style="display: block; margin: 0 auto">');
+    }
+
     function ativarMain(){
+
+        $('#sobre').click(function(){
+            if(!tela.sobre){
+                tela.main = false;
+                tela.sobre = true;
+                $('.sessoes').fadeOut(500);
+                setTimeout(() => {
+                    $('.sobre').fadeIn(500);
+                }, 500);
+                setTimeout(() => {
+                    $('.scroll-escritos-wraper').slideToggle(800);
+                }, 1250);
+            }
+        })
+
+        $('#retornar').click(function(){
+            if(!tela.main){
+                tela.sobre = false;
+                tela.main = true;
+                $('.sobre').fadeOut(500);
+                $('.scroll-escritos-wraper').animate({
+                    scrollTop: $(document).height() * -1
+                }, 0);
+                $('.scroll-escritos-wraper').slideToggle(500);
+                setTimeout(() => {
+                    $('.sessoes').fadeIn(500);
+                    $('.scroll-escritos-wraper').hide();
+                }, 500);
+            }
+        })
+
         $('#colecao').click(function(){
             if(!tela.colecao){
                 tela.colecao = true;

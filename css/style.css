@@ -13,6 +13,11 @@ html, body {
     height: 100%;
     background-color: rgb(20, 20, 20);
 }
+
+
+/***** SESSAO IDIOMAS *****/
+
+
 .idiomas-wraper {
     width: 100%;
     height: 100%;
@@ -61,14 +66,22 @@ html, body {
     display: none;
     grid-template-rows: auto 1fr auto;
 }
+
+
+/***** TELA CONTENDO TUDO DO SITE *****/
+
+
 .page {
     width: 100%;
     min-height: 100%;
 }
+
+
+/***** HEADER *****/
 header, footer {
     width: 100%;
     height: 60px;
-    background: linear-gradient(90deg, #111, #222, #333, #333, #333, #333, #333, #333, #333, #333, #555, #888, #555, #333, #333, #333, #222, #111);
+    background: radial-gradient(#555, #333, #222);
     position: relative;
     z-index: 2;
 }
@@ -92,6 +105,11 @@ header .container h1 {
     left: 0;
     transform: translateY(-50%);
 }
+
+
+/***** SESSAO DA TELA PRINCIPAL MAIN *****/
+
+
 .main-wraper {
     width: 100%;
     height: 100%;
@@ -188,6 +206,96 @@ header .container h1 {
     font-size: 25px;
     padding: 10px;
 }
+
+/***** SESSAO SOBRE O PROJETO *****/
+
+.sobre {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+.scroll {
+    width: 100%;
+    height: 90%;
+    max-width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 1000px;
+}
+.scroll-rolo {
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.cabo-wraper {
+    width: 45px;
+    height: 60px;
+    display: flex;
+}
+.cabo-externo {
+    width: 15px;
+    height: 100%;
+    background: radial-gradient(at left, rgb(100, 0, 0) 30%, darkred 90%);
+    border-radius: 10px 0 0 10px;
+}
+.cabo-meio {
+    width: 20px;
+    height: 100%;
+    background-color: brown;
+    clip-path: polygon(0% 0%, 100% 33%, 100% 66%, 0% 100%);
+    background: radial-gradient(at left, darkred 30%, firebrick 90%);
+}
+.cabo-interno {
+    height: 20px;
+    width: 10px;
+    background: radial-gradient(at left, darkred, firebrick);
+    margin-top: 20px;
+}
+.cabo-direita .cabo-interno,
+.cabo-direita .cabo-meio,
+.cabo-direita .cabo-externo {
+    transform: rotateY(180deg);
+}
+.rolo {
+    width: calc(100% - 90px);
+    height: 60px;
+    background: radial-gradient(white, wheat, burlywood, darkgoldenrod);
+    box-shadow: inset 0 0 20px black;
+    border-radius: 10px;
+}
+.scroll-escritos-wraper {
+    width: calc(100% - 120px);
+    height: calc(100% - 120px);
+    margin: 0 auto;
+    overflow-y: scroll;
+    color: darkred;
+    position: relative;
+    display: none;
+}
+.scroll-escritos-wraper::-webkit-scrollbar {
+    width: 0px;
+}
+.scroll-escritos {
+    width: 100%;
+    height: fit-content;
+    min-height: 100%;
+    text-align: justify;
+    background: radial-gradient(white, wheat, burlywood, darkgoldenrod);
+    box-shadow: inset 0 0 20px black;
+    padding: 25px;
+}
+.scroll-escritos h1 {
+    text-align: center;
+}
+#retornar {
+    cursor: pointer;
+}
+
+/***** SESSÃO COLECAO *****/
+
 
 .collection-box-wraper {
     width: 100%;
@@ -468,7 +576,9 @@ footer .container {
 }
 .autor {
     width: 80%;
+    height: 100%;
     float: left;
+    position: relative;
 }
 .autor h2 {
     padding: 5px;
@@ -479,9 +589,8 @@ footer .container {
     0 0 20px black,
     0 0 50px black;
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 8px;
+    right: 0;
     font-size: 20px;
     font-weight: 200;
 }
