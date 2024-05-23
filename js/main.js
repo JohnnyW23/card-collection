@@ -56,7 +56,7 @@ $(() => {
     $('#flag-pt').click(function(){
         if(tela.idioma){
             tela.idioma = 'portugues';
-            traduzirMain();
+            traduzirMain(0);
             construirCartas();
 
             $('.idiomas-wraper').fadeOut(500);
@@ -73,7 +73,7 @@ $(() => {
     $('#flag-ing').click(function(){
         if(tela.idioma){
             tela.idioma = 'ingles';
-            traduzirMain();
+            traduzirMain(1);
             construirCartas();
 
             $('.idiomas-wraper').fadeOut(500);
@@ -87,16 +87,7 @@ $(() => {
         }
     })
 
-    function traduzirMain(){
-        if(tela.idioma == 'portugues'){
-            traduzir(0);
-
-        }else if(tela.idioma == 'ingles'){
-            traduzir(1);
-        }
-    }
-
-    function traduzir(num){
+    function traduzirMain(num){
         $('#sobre .sessao-descricao').append('\
             <h2>' + traducao[num].sobre[0] + '</h2>\
             <p>' + traducao[num].sobre[1] + '</p>\
