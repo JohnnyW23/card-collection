@@ -19,7 +19,7 @@ function construirCartas(){
                     </div>\
                     <div class="card-divider"></div>\
                     <div class="carta-status">\
-                        <span>' + mensagem + '</span>\
+                        <p>' + mensagem + '</p>\
                     </div>\
                 </div>\
             </div>\
