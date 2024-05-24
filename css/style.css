@@ -738,7 +738,7 @@ footer .container {
 
 @media screen and (max-width: 620px) {
     .main-wraper {
-        min-height: none;
+        min-height: 900px;
     }
     .sessoes {
         min-height: none;

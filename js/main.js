@@ -139,6 +139,7 @@ $(() => {
                 tela.sobre = true;
                 $('.sessoes').fadeOut(500);
                 setTimeout(() => {
+                    $('.main-wraper').css('min-height', '0px');
                     $('.sobre').fadeIn(500);
                     $('.opacity-bg').fadeIn(500);
                 }, 500);
@@ -159,6 +160,7 @@ $(() => {
                 }, 0);
                 $('.scroll-escritos-wraper').slideToggle(500);
                 setTimeout(() => {
+                    $('.main-wraper').css('min-height', '900px');
                     $('.sessoes').fadeIn(500);
                     $('.scroll-escritos-wraper').hide();
                 }, 500);
