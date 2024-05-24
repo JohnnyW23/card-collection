@@ -8,7 +8,7 @@ tela = {
 traducao = [
     {
         scroll: {
-            titulo: 'Tudo de resume a uma palavra...',
+            titulo: 'Tudo se resume a uma palavra...',
             paragrafos: [
                 '23/05/2024',
                 'Meu nome é Davi (também chamado de David) e minha mente, por mais que eu não faça de propósito, está constantemente caçando novas ideias. Me deparei com um projeto na internet sobre a criação de cartas colecionáveis com super-heróis e essa ideia ficou na minha cabeça. Tenho mais afinidade com criaturas mitológicas e esse tipo de fantasia. De modo inevitável, pensei: por que não?',
