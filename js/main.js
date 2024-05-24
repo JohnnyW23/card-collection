@@ -18,7 +18,7 @@ traducao = [
                 'Prata: Comum</p><p>Verde: Raro</p><p>Azul: Super-raro</p><p>Dourado: Épico</p><p>Roxo: Lendário',
                 'Eu fiz a aparência e essência dos personagens baseado em pessoas próximas de mim, também conhecidas como amigos! :P',
                 'E tudo isso só foi possível porque fiquei entediado demais para não estar criando nada. Tudo se resumiu a essa palavra: TÉDIO!',
-                'Recentemente criei um jogo chamado Cyber Luck Ops. <a href="https://johnnyw23.github.io/cyber-luck-ops" target="_blank" style="text-decoration: none; color: firebrick; font-weight: 800">Clique aqui</a> para conferir!',
+                'Recentemente criei um jogo chamado Cyber Luck Ops. <a href="https://johnnyw23.github.io/cyber-luck-ops" target="_blank" style="text-decoration: none; color: black; font-weight: 800">Clique aqui</a> para conferir!',
                 'Obrigado pela sua atenção. Espero que tenha gostado e, qualquer sugestão, pode entrar em contato comigo pelo GitHub ou LinkedIn!',
                 '- Davi Nascimento'
             ]
@@ -49,7 +49,7 @@ traducao = [
                 "Silver: Common</p><p>Green: Rare</p><p>Blue: Super-rare</p><p>Gold: Epic</p><p>Purple: Legendary",
                 "I made the appearance and essence of characters based on people close to me, aka friends! :P",
                 "And all this was only possible because I was too bored not to be creating anything. The whole reason in a nutshell: BOREDOM!",
-                "I recently created a game called Cyber Luck Ops. <a href='https://johnnyw23.github.io/cyber-luck-ops' target='_blank' style='text-decoration: none; color: firebrick; font-weight: 800'>Click here</a> to check it out! It's not translated yet, but I'll soon translate it, like I did in this project.",
+                "I recently created a game called Cyber Luck Ops. <a href='https://johnnyw23.github.io/cyber-luck-ops' target='_blank' style='text-decoration: none; color: black; font-weight: 800'>Click here</a> to check it out!",
                 "Thank you for your attention. I hope you liked it and, for any suggestions, you can contact me through GitHub or LinkedIn!", "- Davi Nascimento"
             ]
         },
