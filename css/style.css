@@ -65,6 +65,7 @@ html, body {
     min-height: 100%;
     display: none;
     grid-template-rows: auto 1fr auto;
+    position: relative;
 }
 
 
@@ -81,7 +82,7 @@ html, body {
 header, footer {
     width: 100%;
     height: 60px;
-    background: radial-gradient(#555, #333, #222);
+    background-color: rgba(0, 0, 0, 0.7);
     position: relative;
     z-index: 2;
 }
@@ -128,9 +129,9 @@ header .container h1 {
     background-size: cover;
     filter: blur(5px);
     width: 100%;
-    height: 100%;
+    height: calc(100% + 120px);
     position: absolute;
-    top: 0;
+    top: -60px;
     left: 0;
 }
 .opacity-bg {
@@ -283,7 +284,8 @@ header .container h1 {
     color: darkred;
     position: relative;
     display: none;
-    clip-path: inset();
+    background: radial-gradient(white, wheat, burlywood, darkgoldenrod);
+    box-shadow: inset 0 0 20px black;
 }
 .scroll-escritos-wraper::-webkit-scrollbar {
     width: 0px;
@@ -293,8 +295,6 @@ header .container h1 {
     height: fit-content;
     min-height: 100%;
     text-align: justify;
-    background: radial-gradient(white, wheat, burlywood, darkgoldenrod);
-    box-shadow: inset 0 0 20px black;
     padding: 25px;
 }
 .scroll-escritos h1 {
@@ -311,26 +311,44 @@ header .container h1 {
     width: 100%;
     min-height: 770px;
     height: 100%;
-    display: none;
     position: relative;
     overflow: hidden;
+    display: none;
 }
-.collection-box {
-    height: 100%;
-    max-height: 750px;
+.collection-box-wraper-2 {
     width: 100%;
     max-width: 1200px;
+    height: 100%;
+    padding: 0 2%;
     margin: 0 auto;
-    padding: 100px;
-    padding-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
     position: relative;
-    top: 0;
-    left: 0;
+    display: flex;
 }
+.collection-box {
+    height: 750px;
+    width: 50%;
+    padding-top: 50px;
+    display: flex;
+    position: relative;
+}
+
+.lore-wraper {
+    width: 50%;
+    padding: 25px;
+    z-index: 1;
+}
+.lore {
+    width: 100%;
+    min-height: 700px;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 20px black;
+}
+
 .bg-img {
     position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -339,12 +357,16 @@ header .container h1 {
     background-image: url(../assets/bg/vampire.jpg);
     background-size: cover;
     background-position: center;
-    transition: 0.5s;
+    transition: background-image 0.5s;
     box-shadow: inset 0 0 100px black,
     inset 0 0 300px black;
+    display: none;
 }
 .card-box {
     position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 .carta-wraper {
     position: absolute;
@@ -364,8 +386,8 @@ header .container h1 {
     border-radius: 30px;
     border: 2px solid black;
     background-color: rgb(20, 20, 20);
-    transition: .5s;
-    box-shadow: 5px 5px 20px black;
+    transition: .5s, scale .25s, box-shadow .25s;
+    box-shadow: 0 0 20px black;
 }
 .carta-info-wrap {
     width: 286px;
@@ -472,17 +494,23 @@ header .container h1 {
 }
 .arrow {
     position: relative;
+    width: 10%;
 }
 .arrow-circle-wrap {
     cursor: pointer;
     position: absolute;
-    bottom: 0;
-    left: 50%;
+    bottom: 90px;
     transform: translate(-50%);
     background: linear-gradient(45deg, #000, #222, wheat, wheat, #222, #222);
     width: 60px;
     height: 60px;
     border-radius: 40px;
+}
+.arrow-prev {
+    left: 100%;
+}
+.arrow-next {
+    left: 0;
 }
 .arrow-circle {
     width: calc(100% - 10px);
@@ -554,8 +582,10 @@ header .container h1 {
 .btn {
     z-index: 2;
 }
-.btn:active {
-    box-shadow: 0 0 20px white;
+.arrow .btn:active {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 2.5px;
 }
 
 footer .container {
@@ -572,10 +602,6 @@ footer .container {
     width: 30px;
     height: 30px;
     background-size: cover;
-}
-.lkdn-logo {
-    background-color: #333;
-    border-radius: 5px;
 }
 .link-logo {
     display: inline-block;
@@ -646,6 +672,22 @@ footer .container {
     .scroll-escritos-wraper {
         max-height: 450px;
     }
+
+    .collection-box-wraper-2 {
+        flex-direction: column;
+    }
+    .collection-box {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding-inline: 5%;
+    }
+    .lore-wraper {
+        width: 100%;
+    }
+    .lore {
+        min-height: 600px;
+    }
 }
 
 
@@ -666,6 +708,19 @@ footer .container {
     }
     .sessoes:has(#github:hover) {
         grid-template-columns: .5fr .5fr 2fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .collection-box-wraper-2 {
+        padding: 0;
+    }
+    .lore-wraper {
+        padding: 25px 0 0 0;
+    }
+    .lore {
+        padding-bottom: 50px;
+        min-height: 700px;
     }
 }
 
@@ -710,7 +765,13 @@ footer .container {
         font-size: 0.9em;
     }
 
+    .bg-img {
+        box-shadow: inset 0 0 100px black;
+    }
 
+    .lore {
+        min-height: 800px;
+    }
 
     footer {
         height: fit-content;
@@ -761,20 +822,16 @@ footer .container {
     }
 }
 
+@media screen and (max-width: 450px) {
+    .lore {
+        min-height: 860px;
+    }
+}
+
 @media screen and (max-width: 400px) {
-    .collection-box-wraper {
-        min-height: 700px;
-    }
     .collection-box {
-        height: 100%;
-        padding-top: 50px;
-        padding-bottom: 130px;
-    }
-    .arrow-prev {
-        left: -100%;
-    }
-    .arrow-next {
-        left: 200%;
+        height: 635px;
+        padding: 30px 30px 0 30px;
     }
     .carta-wraper {
         width: 250px;
@@ -808,13 +865,22 @@ footer .container {
         height: 26.5%;
         font-size: 0.85em;
     }
-    .voltar-btn-wraper {
-        bottom: 35px;
+    .lore {
+        min-height: 950px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .lore {
+        min-height: 1120px;
     }
 }
 
 @media screen and (max-width: 300px) {
     header .container h1 {
         font-size: 25px;
+    }
+    .lore {
+        min-height: 1200px;
     }
 }

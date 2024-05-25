@@ -1,10 +1,18 @@
 function construirCartas(){
     for(i = 0; i < cartas.length; i++){
-        let mensagem;
-        if(tela.idioma == 'portugues')
+        let mensagem, info, valor, titulo;
+        if(tela.idioma == 'portugues'){
             mensagem = cartas[i].mensagem.portugues;
-        else if(tela.idioma == 'ingles')
+            valor = cartas[i].sobre.portugues
+            info = ['Nome: ', 'Idade: ', 'Classe: ', 'Raridade: '];
+            titulo = 'INFORMAÇÕES DA CARTA'
+
+        }else if(tela.idioma == 'ingles'){
             mensagem = cartas[i].mensagem.ingles;
+            valor = cartas[i].sobre.ingles;
+            info = ['Name: ', 'Age: ', 'Class: ', 'Rarity: '],
+            titulo = 'CARD INFO'
+        }
 
         $('.card-box').append('\
         <div class="carta-wraper">\
@@ -24,11 +32,35 @@ function construirCartas(){
                 </div>\
             </div>\
         </div>')
+
+        $('.lore').append('\
+            <div id="' + cartas[i].id + '" style="display: none">\
+                <h1 style="text-align: center">' + titulo + '</h1><br>\
+                <span style="font-weight: 800">' + info[0] + '</span><span>' + cartas[i].nome + '</span>\
+                <br>\
+                <span style="font-weight: 800">' + info[1] + '</span><span>' + cartas[i].idade + '</span>\
+                <br>\
+                <span style="font-weight: 800">' + info[2] + '</span><span>' + valor.classe + '</span>\
+                <br>\
+                <span style="font-weight: 800">' + info[3] + '</span><span>' + valor.raridade + '</span>\
+                <br>\
+            </div>\
+        ')
+
+        
+        for(l = 0; l < valor.lore.length; l++){
+            $('.lore div#' + cartas[i].id).append('\
+                <br>\
+                <p>' + valor.lore[l] + '</p>\
+            ')
+        }
     }
 
     $('.carta-wraper').eq(0).addClass('selected');
     $('.carta-wraper').eq(1).addClass('next');
     $('.carta-wraper').eq($('.carta-wraper').length - 1).addClass('prev');
+
+    $('.lore div').eq(0).css('display', 'block');
 }
 
 
@@ -63,6 +95,8 @@ function ativarCardBox (){
             if(!transition){
                 transition = true;
 
+                $('.lore #' + $('.selected .carta-img').attr('id')).css('display', 'none');
+
                 if(flipped){
                     $('.selected').click(); 
                 }
@@ -71,7 +105,6 @@ function ativarCardBox (){
                 let selected = document.querySelector('.selected');
                 let index = cartas.indexOf(selected);
                 let number = index;
-                let next;
                 if(number == $('.carta-wraper').length - 2)
                     next = 0
                 else if(number == $('.carta-wraper').length - 1)
@@ -92,7 +125,9 @@ function ativarCardBox (){
                 $('.selected').addClass('prev');
                 $('.selected').removeClass('selected')
                 $('.next').addClass('selected');
-                $('.next').removeClass('next')
+                $('.next').removeClass('next');
+
+                $('.lore #' + $('.selected .carta-img').attr('id')).css('display', 'block');
 
                 let nextIndex;
                 if(index == $('.carta-wraper').length - 2)
@@ -129,6 +164,8 @@ function ativarCardBox (){
             if(!transition){
                 transition = true
 
+                $('.lore #' + $('.selected .carta-img').attr('id')).css('display', 'none');
+
                 if(flipped){
                     $('.selected').click(); 
                 }
@@ -137,7 +174,6 @@ function ativarCardBox (){
                 let selected = document.querySelector('.selected');
                 let index = cartas.indexOf(selected);
                 let number = index;
-                let prev;
                 if(number == 1)
                     prev = $('.carta-wraper').length - 1
                 else if(number == 0)
@@ -159,6 +195,8 @@ function ativarCardBox (){
                 $('.selected').removeClass('selected')
                 $('.prev').addClass('selected');
                 $('.prev').removeClass('prev');
+
+                $('.lore #' + $('.selected .carta-img').attr('id')).css('display', 'block');
 
                 let prevIndex;
                 if(index == 1)
@@ -201,6 +239,10 @@ function ativarCardBox (){
                         $(this).find('.carta-back').css('display', 'none')
                     }, 130);
                 }
+                $(this).find('.carta').css('scale', '1.15').css('box-shadow', '0 0 40px black')
+                setTimeout(() => {
+                    $(this).find('.carta').css('scale', '1').css('box-shadow', '0 0 20px black')
+                }, 250);
                 setTimeout(() => {
                     flipping = false
                 }, 500);
@@ -213,8 +255,9 @@ function ativarCardBox (){
                 tela.main = true;
                 tela.colecao = false;
 
-
                 $('.collection-box-wraper').fadeOut(500);
+                $('.bg-img').fadeOut(500);
+
                 setTimeout(() => {
                     $('.main-wraper').fadeIn(500)
                 }, 500);
