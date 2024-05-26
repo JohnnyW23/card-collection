@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 html, body {
     height: 100%;
