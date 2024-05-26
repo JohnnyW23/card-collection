@@ -23,7 +23,7 @@ function construirCartas(){
                     </div>\
                     <div class="carta-img" id="' + cartas[i].id + '" style="background-image: url(../assets/card-front/' + cartas[i].id + '.jpg)">\
                         <div class="carta-img-brilho"></div>\
-                        <h3 class="carta-nome">' + cartas[i].nome + '</h3>\
+                        <h3 class="carta-nome ' + cartas[i].raridade + '">' + cartas[i].nome + '</h3>\
                     </div>\
                     <div class="card-divider"></div>\
                     <div class="carta-status">\
@@ -74,19 +74,19 @@ function ativarCardBox (){
         setInterval(() => {
             graus = (graus + 1) % 360;
             let gradient = 'linear-gradient(' + graus + 'deg, darkmagenta, magenta, rgb(255, 120, 255), white, var(--cor), var(--cor), var(--cor), var(--cor))';
-            $('.legendary').css('background', gradient);
+            $('div.legendary').css('background', gradient);
 
             gradient = 'linear-gradient(' + graus + 'deg, rgb(226, 192, 0), yellow, rgb(255, 255, 120), white, var(--cor), var(--cor), var(--cor), var(--cor))';
-            $('.epic').css('background', gradient);
+            $('div.epic').css('background', gradient);
 
             gradient = 'linear-gradient(' + graus + 'deg, blue, rgb(0, 247, 255), rgb(132, 251, 255), white, var(--cor), var(--cor), var(--cor), var(--cor))';
-            $('.super-rare').css('background', gradient);
+            $('div.super-rare').css('background', gradient);
 
             gradient = 'linear-gradient(' + graus + 'deg, rgb(0, 68, 0), lime, greenyellow, white, var(--cor), var(--cor), var(--cor), var(--cor))';
-            $('.rare').css('background', gradient);
+            $('div.rare').css('background', gradient);
 
             gradient = 'linear-gradient(' + graus + 'deg, grey, silver, #ccc, white, var(--cor), var(--cor), var(--cor), var(--cor))';
-            $('.common').css('background', gradient);
+            $('div.common').css('background', gradient);
 
         }, 30);
 

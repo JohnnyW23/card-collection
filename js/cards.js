@@ -7,7 +7,7 @@ cartas = [
         idade: '195',
         mensagem: {
             portugues: 'Uma longa noite você pode aguardar. Caos e destruição esperam teu acordar. Atente-se ao redor antes do amanhecer. De nada adianta, você vai perecer!',
-            ingles: 'A long night you may await. Chaos and destruction await your awakening. Pay attention to your surroundings before dawn. It’s no use, you’re going to perish!'
+            ingles: "A long night you may await. Chaos and destruction await your awakening. Pay attention to your surroundings before dawn. It's no use, you're going to perish!"
         },
         sobre: {
             portugues: {
@@ -52,22 +52,30 @@ cartas = [
                 classe: 'Fada',
                 raridade: 'Épico',
                 lore: [
-                    'Elizash Flowers emergiu das pétalas de um antigo carvalho de natureza intrigante. Sua essência está entrelaçada com a flora e a fauna, e sua mãe, a própria árvore, a instruiu nos segredos da vida e da proteção.',
+                    'Elizash Flowers possui um olhar profundo, quase clarividente. Gerada das pétalas de um carvalho milenar, Elizash é a filha da natureza, instruída pela própria árvore nos segredos da vida e da proteção.',
 
-                    'Com uma alma compassiva e sensível, Elizash busca curar o mundo, trazendo harmonia entre humanos, fadas e todas as criaturas mágicas que compartilham o reino. Seu objetivo é encontrar um antigo pergaminho, um relicário de magia ancestral, capaz de restaurar a terra devastada e renovar a esperança.',
+                    'Com uma aura compassiva e sensível, Elizash dedica-se a curar o mundo, buscando a harmonia entre humanos, fadas e todas as criaturas mágicas que compartilham o reino. Seu objetivo é encontrar o Pergaminho Esmeralda, um relicário de magia ancestral capaz de restaurar a terra devastada e renovar a esperança.',
                     
-                    'O círculo de cogumelos no coração da floresta encantada é seu lar. Lá, ela cuida das plantas com ternura, curando suas feridas e nutrindo-as com amor. Quando a lua se ergue, Elizash entoa canções de esperança, suas notas flutuando pelo ar como um bálsamo para os corações cansados.'
+                    'O círculo de cogumelos no coração da floresta encantada é seu lar. Lá, ela cuida das plantas com ternura, curando suas feridas e nutrindo-as com amor. Quando a lua se ergue, Elizash entoa canções de esperança, suas notas flutuando pelo ar como um bálsamo para os corações cansados.',
+                    
+                    'Elizash não percorre sua jornada em solidão; ela é acompanhada por uma figura etérea, um espírito da floresta feito de névoa e folhagem, cuja presença é tão calmante quanto a brisa da manhã e tão misteriosa quanto os segredos que a floresta guarda. Com cada passo que dá, Elizash deixa um rastro de vida e crescimento – onde antes havia solo estéril, agora brotam flores; onde havia silêncio, agora se ouve o canto dos pássaros.',
+                    
+                    'Sua jornada é um testamento à esperança que ainda reside nos corações de todos os seres vivos. Com o Pergaminho Esmeralda como sua estrela guia, Elizash continua sua busca incansável, com a fé de que a harmonia prevalecerá.'
                 ],
             },
             ingles: {
                 classe: 'Fairy',
                 raridade: 'Epic',
                 lore: [
-                    "Elizash Flowers emerged from the petals of an ancient oak tree of intriguing nature. Her essence is intertwined with the flora and fauna, and her mother—the very tree itself—instructed her in the secrets of life and protection.",
+                    "Elizash Flowers possesses a deep, almost clairvoyant gaze. Born from the petals of an ancient oak tree, Elizash is the daughter of nature, instructed by the very tree in the secrets of life and protection.",
 
-                    "With a compassionate and sensitive soul, Elizash seeks to heal the world, bringing harmony among humans, fairies, and all magical creatures who share the realm. Her goal is to find an ancient parchment, a reliquary of ancestral magic capable of restoring the devastated land and renewing hope.",
+                    "With a compassionate and sensitive aura, Elizash dedicates herself to healing the world, seeking harmony among humans, fairies, and all magical creatures who share the realm. Her goal is to find the Emerald Scroll, a reliquary of ancestral magic capable of restoring the devastated land and renewing hope.",
 
-                    "The circle of mushrooms in the heart of the enchanted forest is her home. There, she tends to the plants with tenderness, healing their wounds and nurturing them with love. When the moon rises, Elizash sings songs of hope, her notes floating through the air like a balm for weary hearts."
+                    "The circle of mushrooms in the heart of the enchanted forest is her home. There, she tends to the plants with tenderness, healing their wounds and nurturing them with love. When the moon rises, Elizash sings songs of hope, her notes floating through the air like a balm for weary hearts.",
+
+                    "Elizash doesn't journey alone; she is accompanied by an ethereal figure, a forest spirit made of mist and foliage, whose presence is as calming as the morning breeze and as mysterious as the secrets the forest holds. With each step she takes, Elizash leaves a trail of life and growth—where once there was barren soil, now flowers bloom; where there was silence, now birdsong fills the air.",
+
+                    "Her journey is a testament to the hope that still resides in the hearts of all living beings. Guided by the Emerald Scroll, Elizash continues her tireless quest, with faith that harmony will prevail."
                 ]
             }
         }
@@ -187,7 +195,7 @@ cartas = [
         }
     },{
         id: 'card5',
-        raridade: 'super-rare',
+        raridade: 'rare',
         classe: 'shooter',
         nome: 'Lilith Sharpwind',
         idade: '23',
@@ -197,8 +205,8 @@ cartas = [
         },
         sobre: {
             portugues: {
-                classe: 'Atirador',
-                raridade: 'Super-raro',
+                classe: 'Atiradora',
+                raridade: 'Raro',
                 lore: [
                     'Lilith Sharpwind é uma atiradora nascida em uma linhagem de caçadores de recompensas. Desde a infância, ela foi ensinada a esperar pelo momento perfeito, a respiração tranquila antes do disparo. Ela é a calma no olho do furacão, uma presença metódica que busca impor justiça e ordem em meio ao caos.',
 
@@ -211,7 +219,7 @@ cartas = [
             },
             ingles: {
                 classe: 'Shooter',
-                raridade: 'Super-rare',
+                raridade: 'Rare',
                 lore: [
                     "Lilith Sharpwind is a born marksman from a lineage of bounty hunters. Since childhood, she has been taught to wait for the perfect moment, her breath steady before the shot. She is the calm in the eye of the storm, a methodical presence seeking to impose justice and order amidst chaos.",
 
@@ -220,6 +228,48 @@ cartas = [
                     "For years, Lord Duskmire has spread terror throughout the realm. His crimes are countless: villages set ablaze, families torn apart, lives extinguished. But it was a specific act that marked Lilith forever. He murdered her younger brother, Joshua, a daring dreamer who defied the tyrant. The pain of loss and burning fury fuel her determination.",
 
                     "Her nights are dedicated to studying Lord Duskmire's movements, tracing his bloody trail. She knows that revenge won't bring her brother back, but it's the only way to soothe her tormented soul. Lilith doesn't merely seek to capture him; she wants him to feel the same desperation she felt. And when the final bullet finds its mark, she'll know her vengeance is complete."
+                ]
+            }
+        }
+    },{
+        id: 'card6',
+        raridade: 'common',
+        classe: 'warrior',
+        nome: 'Edwirges Blackthorn',
+        idade: '25',
+        mensagem: {
+            portugues: 'Vagando por terras inférteis, você se vê nessa poeira, cercado por vislumbres arruinados pelo seu passado. O que sonhamos nunca é alcançável. Se perdoe por isso e pereça diante minha espada.',
+            ingles: "Wandering through barren lands, you find yourself in this dust, surrounded by glimpses ruined by your past. What we dream is never attainable. Forgive yourself for it and perish before my sword."
+        },
+        sobre: {
+            portugues: {
+                classe: 'Guerreira',
+                raridade: 'Comum',
+                lore: [
+                    'Edwirges Blackthorn nasceu nas sombras do vilarejo de Stonehaven. Nascida em uma família comum de camponeses, sua infância foi marcada por trabalhos árduos nos campos e no moinho. No entanto, sua mente inquisitiva e sua determinação a separavam dos demais.',
+
+                    'Carrega um fardo pesado: o peso de um passado que a assombra. Edwirges cometeu um erro terrível durante a Grande Guerra, um ato que custou a vida de seu irmão mais novo. A culpa a corroía, e ela busca redenção nas batalhas e na solidão.',
+                    
+                    'Edwirges vive à margem da sociedade, uma força que patrulha as bandas empoeiradas do reino. Não tem amigos nem laços familiares; sua única companhia é sua zweihander, uma lâmina que ela afia com a mesma dedicação que afia seu espírito.',
+                    
+                    'Em suas noites solitárias, Edwirges caminha por densas florestas procurando por paz e flores brancas. Não é uma heroína, mas uma sobrevivente, uma guerreira que enfrenta os demônios internos com a mesma ferocidade que enfrenta os inimigos reais.',
+                    
+                    'A história de Edwirges Blackthorn ecoa pelas tavernas e fogueiras de Stonehaven. Alguns a veem como uma protetora, outros como uma ameaça. Mas ela não se importa com a opinião alheia; sua jornada é pessoal e silenciosa, uma busca por redenção que a levará aos confins do mundo, se necessário.'
+                ]
+            },
+            ingles: {
+                classe: 'Warrior',
+                raridade: 'Common',
+                lore: [
+                    "Edwirges Blackthorn was born in the shadows of the village of Stonehaven. Born into a common family of peasants, her childhood was marked by hard work in the fields and at the mill. However, her inquisitive mind and determination set her apart from the others.",
+
+                    "She carries a heavy burden: the weight of a past that haunts her. Edwirges committed a terrible mistake during the Great War, an act that cost her younger brother's life. Guilt corrodes her, and she seeks redemption in battles and solitude.",
+                    
+                    "Edwirges lives on the fringes of society, a force patrolling the dusty outskirts of the realm. She has no friends or family ties; her only companion is her zweihander, a blade she sharpens with the same dedication she sharpens her spirit.",
+                    
+                    "In her lonely nights, Edwirges walks through dense forests in search of peace and white flowers. She is not a heroine but a survivor, a warrior who confronts inner demons with the same ferocity she faces real enemies.",
+                    
+                    "The tale of Edwirges Blackthorn echoes through the taverns and campfires of Stonehaven. Some see her as a protector, others as a threat. But she doesn't care about others' opinions; her journey is personal and silent, a quest for redemption that will take her to the ends of the world if necessary."
                 ]
             }
         }
