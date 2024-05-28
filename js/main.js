@@ -5,7 +5,7 @@ tela = {
     colecao: false,
 }
 
-
+// Definição do conteúdo dos elementos da tela principal do site baseado no idioma de escolha na tela inicial
 function traduzirSite(){
     if(tela.idioma == 'portugues'){
         traducao = {
@@ -75,104 +75,104 @@ function traduzirSite(){
 }
 
 
-$(() => {
-    $('.idiomas img').click(function(){
-        if(tela.idioma){
-            tela.idioma = $(this).attr('id');
-            traduzirSite();
-            traduzirMain();
-            construirCartas();
+// Ao clicar no idioma escolhido
+$('.idiomas img').click(function(){
+    if(tela.idioma){
+        tela.idioma = $(this).attr('id');
+        traduzirSite(); // Primeiro é necessário definir qual será a tradução do site
+        traduzirMain(); // Depois é necessário inserir os elementos que foram definidos conforme o idioma de escolha do usuário
+        construirCartas(cartas); // Aqui as cartas são introduzidas ao .card-box
 
-            $('.idiomas-wraper').fadeOut(500);
+        $('.idiomas-wraper').fadeOut(500);
+        setTimeout(() => {
+            $('.page-wraper').fadeIn(500);
+            $('.page-wraper').css('display', 'grid');
+            tela.main = true
+            ativarMain(); // Ativação das funções da tela principal após seus elementos serem inseridos
+            ativarCardBox(); // Ativação das funções do .card-box após seus elementos serem inseridos
+        }, 500);
+    }
+})
+
+
+// Inserção do conteúdo escrito na tela principal
+function traduzirMain(){
+    $('#sobre .sessao-descricao').append('\
+        <h2>' + traducao.sobre[0] + '</h2>\
+        <p>' + traducao.sobre[1] + '</p>\
+    ');
+    $('#colecao .sessao-descricao').append('\
+        <h2>' + traducao.colecao[0] + '</h2>\
+        <p>' + traducao.colecao[1] + '</p>\
+    ');
+    $('#github .sessao-descricao').append('\
+        <h2>' + traducao.github[0] + '</h2>\
+        <p>' + traducao.github[1] + '</p>\
+    ');
+    $('.voltar-btn').append('<h2>' + traducao.voltar_btn  + '</h2>');
+    $('.scroll-escritos').append('\
+        <h1>' + traducao.scroll.titulo + '</h1>\
+        <br><br>\
+    ');
+    for(i = 0; i < traducao.scroll.paragrafos.length; i++){
+        $('.scroll-escritos').append('\
+            <p>' + traducao.scroll.paragrafos[i] + '</p>\
+            <br>\
+        ');
+    };
+    $('.scroll-escritos').append('<img id="retornar" src="assets/svg/voltar.svg" width="20px" style="display: block; margin: 0 auto">');
+}
+
+
+// Função que ativa eventos da tela principal agora que seus elementos foram inseridos
+function ativarMain(){
+    $('#sobre').click(function(){
+        if(!tela.sobre){
+            tela.main = false;
+            tela.sobre = true;
+            $('.sessoes').fadeOut(500);
             setTimeout(() => {
-                $('.page-wraper').fadeIn(500);
-                $('.page-wraper').css('display', 'grid');
-                tela.main = true
-                ativarMain();
-                ativarCardBox();
+                $('.sobre').fadeIn(500);
+                $('.opacity-bg').fadeIn(500);
+            }, 500);
+            setTimeout(() => {
+                $('.scroll-escritos-wraper').slideToggle(800);
+            }, 1250);
+        }
+    })
+
+    $('#retornar').click(function(){
+        if(!tela.main){
+            tela.sobre = false;
+            tela.main = true;
+            $('.sobre').fadeOut(500);
+            $('.opacity-bg').fadeOut(500);
+            $('.scroll-escritos-wraper').animate({
+                scrollTop: $(document).height() * -1
+            }, 0);
+            $('.scroll-escritos-wraper').slideToggle(500);
+            setTimeout(() => {
+                $('.sessoes').fadeIn(500);
+                $('.scroll-escritos-wraper').hide();
             }, 500);
         }
     })
 
+    $('#colecao').click(function(){
+        if(!tela.colecao){
+            tela.colecao = true;
+            tela.main = false;
+            tela.colecaoInitial = $('.card-box').html();
 
-    function traduzirMain(){
-        $('#sobre .sessao-descricao').append('\
-            <h2>' + traducao.sobre[0] + '</h2>\
-            <p>' + traducao.sobre[1] + '</p>\
-        ');
-        $('#colecao .sessao-descricao').append('\
-            <h2>' + traducao.colecao[0] + '</h2>\
-            <p>' + traducao.colecao[1] + '</p>\
-        ');
-        $('#github .sessao-descricao').append('\
-            <h2>' + traducao.github[0] + '</h2>\
-            <p>' + traducao.github[1] + '</p>\
-        ');
-        $('.voltar-btn').append('<h2>' + traducao.voltar_btn  + '</h2>');
-        $('.scroll-escritos').append('\
-            <h1>' + traducao.scroll.titulo + '</h1>\
-            <br><br>\
-        ');
-        for(i = 0; i < traducao.scroll.paragrafos.length; i++){
-            $('.scroll-escritos').append('\
-                <p>' + traducao.scroll.paragrafos[i] + '</p>\
-                <br>\
-            ');
-        };
-        $('.scroll-escritos').append('<img id="retornar" src="assets/svg/voltar.svg" width="20px" style="display: block; margin: 0 auto">');
-    }
+            $('.main-wraper').fadeOut(500);
+            setTimeout(() => {
+                $('.collection-box-wraper').fadeIn(500);
+                $('.bg-img').fadeIn(500);
+            }, 500);
+        }
+    })
 
-    function ativarMain(){
-
-        $('#sobre').click(function(){
-            if(!tela.sobre){
-                tela.main = false;
-                tela.sobre = true;
-                $('.sessoes').fadeOut(500);
-                setTimeout(() => {
-                    $('.sobre').fadeIn(500);
-                    $('.opacity-bg').fadeIn(500);
-                }, 500);
-                setTimeout(() => {
-                    $('.scroll-escritos-wraper').slideToggle(800);
-                }, 1250);
-            }
-        })
-
-        $('#retornar').click(function(){
-            if(!tela.main){
-                tela.sobre = false;
-                tela.main = true;
-                $('.sobre').fadeOut(500);
-                $('.opacity-bg').fadeOut(500);
-                $('.scroll-escritos-wraper').animate({
-                    scrollTop: $(document).height() * -1
-                }, 0);
-                $('.scroll-escritos-wraper').slideToggle(500);
-                setTimeout(() => {
-                    $('.sessoes').fadeIn(500);
-                    $('.scroll-escritos-wraper').hide();
-                }, 500);
-            }
-        })
-
-        $('#colecao').click(function(){
-            if(!tela.colecao){
-                tela.colecao = true;
-                tela.main = false;
-                $('.bg-img').css('background-image', 'url(assets/bg/' + cartas[0].id + '.jpg)');
-                tela.colecaoInitial = $('.card-box').html();
-    
-                $('.main-wraper').fadeOut(500);
-                setTimeout(() => {
-                    $('.collection-box-wraper').fadeIn(500);
-                    $('.bg-img').fadeIn(500);
-                }, 500);
-            }
-        })
-    
-        $('#github').click(function(){
-            window.open('https://github.com/JohnnyW23', '_blank')
-        })
-    }
-})
+    $('#github').click(function(){
+        window.open('https://github.com/JohnnyW23', '_blank')
+    })
+}

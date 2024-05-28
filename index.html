@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="icon" href="assets/castle.ico" type="image/x-icon">
         <script src="js/jquery-3.7.1.js"></script>
     </head>
@@ -95,20 +96,36 @@
                 <section class="collection-box-wraper">
                     <div class="collection-box-wraper-2">
                         <div class="collection-box">
-                            <div id="btn-voltar" class="voltar-btn-wraper btn">
-                                <div class="voltar-btn"></div>
+                            <div class="carta-ordem">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <div class="ordem-opcoes">
+                                    <ul>
+                                        <li id="todas" class="ordem-selected">ALL</li>
+                                        <li id="crescente"><i class="fa fa-caret-right" aria-hidden="true"></i></li>
+                                        <li id="decrescente"><i class="fa fa-caret-left" aria-hidden="true"></i></li>
+                                        <li id="legendary">Lg</li>
+                                        <li id="epic">Ep</li>
+                                        <li id="super-rare">Sr</li>
+                                        <li id="rare">Rr</li>
+                                        <li id="common">Cm</li>
+                                        <li id="reverse">RVS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="btn-voltar" class="voltar-btn-wraper btn btn-outside">
+                                <div class="voltar-btn btn-inside"></div>
                             </div>
                             <div class="arrow">
-                                <div class="arrow-circle-wrap arrow-prev btn">
-                                    <div class="arrow-circle left-circle">
+                                <div class="arrow-circle-wrap arrow-prev btn btn-outside">
+                                    <div class="arrow-circle left-circle btn-inside">
                                         <div class="left-arrow"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-box"></div>
                             <div class="arrow">
-                                <div class="arrow-circle-wrap arrow-next btn">
-                                    <div class="arrow-circle right-circle">
+                                <div class="arrow-circle-wrap arrow-next btn btn-outside">
+                                    <div class="arrow-circle right-circle btn-inside">
                                         <div class="right-arrow"></div>
                                     </div>
                                 </div>
