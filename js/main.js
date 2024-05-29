@@ -162,7 +162,6 @@ function ativarMain(){
         if(!tela.colecao){
             tela.colecao = true;
             tela.main = false;
-            tela.colecaoInitial = $('.card-box').html();
 
             $('.main-wraper').fadeOut(500);
             setTimeout(() => {

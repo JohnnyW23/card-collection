@@ -41,88 +41,6 @@ cartas = [
     },{
         id: 'card1',
         posicao: '#002',
-        raridade: 'epic',
-        classe: 'fairy',
-        nome: 'Elizash Flowers',
-        idade: '24',
-        mensagem: {
-            portugues: 'Nas asas da lua, danço com véu de pureza e intensidade. Sou guardiã dos sentimentos profundos, sussurrando segredos às estrelas. Meus olhos são as constelações.',
-            ingles: 'On the wings of the moon, I dance with a veil of purity and intensity. I am the guardian of deep feelings, whispering secrets to the stars. My eyes are the constellations.'
-        },
-        sobre: {
-            portugues: {
-                classe: 'Fada',
-                raridade: 'Épico',
-                lore: [
-                    'Elizash Flowers possui um olhar profundo, quase clarividente. Gerada das pétalas de um carvalho milenar, Elizash é a filha da natureza, instruída pela própria árvore nos segredos da vida e da proteção.',
-
-                    'Com uma aura compassiva e sensível, Elizash dedica-se a curar o mundo, buscando a harmonia entre humanos, fadas e todas as criaturas mágicas que compartilham o reino. Seu objetivo é encontrar o Pergaminho Esmeralda, um relicário de magia ancestral capaz de restaurar a terra devastada e renovar a esperança.',
-                    
-                    'O círculo de cogumelos no coração da floresta encantada é seu lar. Lá, ela cuida das plantas com ternura, curando suas feridas e nutrindo-as com amor. Quando a lua se ergue, Elizash entoa canções de esperança, suas notas flutuando pelo ar como um bálsamo para os corações cansados.',
-                    
-                    'Elizash não percorre sua jornada em solidão; ela é acompanhada por uma figura etérea, um espírito da floresta feito de névoa e folhagem, cuja presença é tão calmante quanto a brisa da manhã e tão misteriosa quanto os segredos que a floresta guarda. Com cada passo que dá, Elizash deixa um rastro de vida e crescimento – onde antes havia solo estéril, agora brotam flores; onde havia silêncio, agora se ouve o canto dos pássaros.',
-                    
-                    'Sua jornada é um testamento à esperança que ainda reside nos corações de todos os seres vivos. Com o Pergaminho Esmeralda como sua estrela guia, Elizash continua sua busca incansável, com a fé de que a harmonia prevalecerá.'
-                ],
-            },
-            ingles: {
-                classe: 'Fairy',
-                raridade: 'Epic',
-                lore: [
-                    "Elizash Flowers possesses a deep, almost clairvoyant gaze. Born from the petals of an ancient oak tree, Elizash is the daughter of nature, instructed by the very tree in the secrets of life and protection.",
-
-                    "With a compassionate and sensitive aura, Elizash dedicates herself to healing the world, seeking harmony among humans, fairies, and all magical creatures who share the realm. Her goal is to find the Emerald Scroll, a reliquary of ancestral magic capable of restoring the devastated land and renewing hope.",
-
-                    "The circle of mushrooms in the heart of the enchanted forest is her home. There, she tends to the plants with tenderness, healing their wounds and nurturing them with love. When the moon rises, Elizash sings songs of hope, her notes floating through the air like a balm for weary hearts.",
-
-                    "Elizash doesn't journey alone; she is accompanied by an ethereal figure, a forest spirit made of mist and foliage, whose presence is as calming as the morning breeze and as mysterious as the secrets the forest holds. With each step she takes, Elizash leaves a trail of life and growth—where once there was barren soil, now flowers bloom; where there was silence, now birdsong fills the air.",
-
-                    "Her journey is a testament to the hope that still resides in the hearts of all living beings. Guided by the Emerald Scroll, Elizash continues her tireless quest, with faith that harmony will prevail."
-                ]
-            }
-        }
-    },{
-        id: 'card2',
-        posicao: '#003',
-        raridade: 'super-rare',
-        classe: 'fairy',
-        nome: 'Becky Flowers',
-        idade: '16',
-        mensagem: {
-            portugues: 'A alegria e a leveza são as cores e pinceladas que transformam a vida em arte, enquanto a bondade é o verniz que protege e dá brilho à nossa humanidade compartilhada.',
-            ingles: 'Joy and lightness are the colors and brushstrokes that transform life into art, while kindness is the varnish that protects and gives shine to our shared humanity.'
-        },
-        sobre: {
-            portugues: {
-                classe: 'Fada',
-                raridade: 'Super-raro',
-                lore: [
-                    'Becky Flowers é a personificação da curiosidade e do otimismo. Irmã mais nova de Elizash, ela compartilha com ela a origem mágica, tendo brotado da mesma árvore ancestral, e uma profunda conexão com a natureza que as cerca.',
-
-                    'Movida por um espírito altruísta e uma visão otimista, Becky tem o sonho de tecer laços entre as diversas raças mágicas do reino. Ela acredita firmemente na possibilidade de uma coexistência harmoniosa e trabalha incansavelmente para tornar esse sonho realidade.',
-                    
-                    'Desde menor, ela sonha com a criação de uma escola inclusiva, um lugar de aprendizado e entendimento mútuo, onde todas as criaturas e humanos possam compartilhar conhecimento e crescer juntos em harmonia.',
-                    
-                    'Becky reside em uma encantadora casinha de cogumelo, não muito distante da morada de sua irmã, onde cada objeto colecionado conta uma história e cada livro antigo é uma aventura à espera. Ela passa seus dias explorando os mistérios dos grimórios e suas noites contemplando as estrelas, sempre sonhando com um futuro de paz e unidade para todos os seres do reino encantado.'
-                ]
-            },
-            ingles: {
-                classe: 'Fairy',
-                raridade: 'Super-rare',
-                lore: [
-                    "Becky Flowers is the embodiment of curiosity and optimism. Younger sister to Elizash, she shares the magical origin with her, having sprouted from the same ancestral tree, and a deep connection with the nature that surrounds them.",
-
-                    "Driven by an altruistic spirit and an optimistic vision, Becky dreams of weaving bonds among the diverse magical races of the realm. She firmly believes in the possibility of harmonious coexistence and tirelessly works to make that dream a reality.",
-                    
-                    "Since childhood, she has envisioned creating an inclusive school — a place of learning and mutual understanding — where all creatures and humans can share knowledge and grow together in harmony.",
-                    
-                    "Becky resides in a charming mushroom cottage, not far from her sister's abode, where each collected object tells a story and every ancient book is an adventure waiting to unfold. She spends her days exploring the mysteries of grimoires and her nights contemplating the stars, always dreaming of a future of peace and unity for all beings in the enchanted kingdom."
-                ]
-            }
-        }
-    },{
-        id: 'card3',
-        posicao: '#004',
         raridade: 'rare',
         classe: 'warrior',
         nome: 'Peter Falkburg',
@@ -160,11 +78,11 @@ cartas = [
             }
         }
     },{
-        id: 'card4',
-        posicao: '#005',
+        id: 'card2',
+        posicao: '#003',
         raridade: 'common',
         classe: 'fighter',
-        nome: 'Fabian Temphest',
+        nome: 'Dalton Nielsen',
         idade: '28',
         mensagem: {
             portugues: 'Cada soco é um passo mais perto. Cada adversário, um obstáculo a ser esmagado. Minha missão? Vencer, custe o que custar. No ringue, sou eu contra o mundo.',
@@ -175,32 +93,71 @@ cartas = [
                 classe: 'Lutador',
                 raridade: 'Comum',
                 lore: [
-                    'Fabian Temphest emergiu das sombras das ruas decadentes de uma cidade esquecida. Desde jovem, ele aprendeu que seus punhos eram mais do que meras armas; eram sua passagem para a sobrevivência. Nas lutas clandestinas, onde a honra era substituída pela necessidade, Fabian encontrou seu palco.',
+                    'Dalton Nielsen emergiu das sombras das ruas decadentes de uma cidade esquecida. Desde jovem, ele aprendeu que seus punhos eram mais do que meras armas; eram sua passagem para a sobrevivência. Nas lutas clandestinas, onde a honra era substituída pela necessidade, Dalton encontrou seu palco.',
 
                     'Seu coração é moldado pelo pragmatismo e pela determinação. Ele não luta apenas por dinheiro, mas para provar seu valor a um mundo que muitas vezes o rejeitou. Ele é guiado por regras e objetivos claros. Seu maior desejo é se tornar o campeão indiscutível, um título que transcende as cordas do ringue e ecoa pelas vielas escuras.',
                     
-                    'No pequeno apartamento acima da velha academia de boxe, Fabian treina incansavelmente. Seus punhos, impregnados de magia, desferem golpes que transcendem o físico. Ele busca aprimorar suas habilidades mágicas, sabendo que a verdadeira vitória não está apenas na glória dos ringues, mas na esperança que ele pode trazer aos desfavorecidos.',
+                    'No pequeno apartamento acima da velha academia de boxe, Dalton treina incansavelmente. Seus punhos, impregnados de magia, desferem golpes que transcendem o físico. Ele busca aprimorar suas habilidades mágicas, sabendo que a verdadeira vitória não está apenas na glória dos ringues, mas na esperança que ele pode trazer aos desfavorecidos.',
                     
-                    'As paredes desgastadas testemunham seus esforços diários. Fabian sonha com um futuro onde as ruas não sejam mais seu campo de batalha, onde sua magia possa iluminar os corações sombrios e oferecer uma chance de redenção.'
+                    'As paredes desgastadas testemunham seus esforços diários. Dalton sonha com um futuro onde as ruas não sejam mais seu campo de batalha, onde sua magia possa iluminar os corações sombrios e oferecer uma chance de redenção.'
                 ]
             },
             ingles: {
                 classe: 'Fighter',
                 raridade: 'Common',
                 lore: [
-                    "Fabian Temphest emerged from the shadows of the decaying streets in a forgotten city. From a young age, he learned that his fists were more than mere weapons; they were his passage to survival. In clandestine fights, where honor was replaced by necessity, Fabian found his stage.",
+                    "Dalton Nielsen emerged from the shadows of the decaying streets in a forgotten city. From a young age, he learned that his fists were more than mere weapons; they were his passage to survival. In clandestine fights, where honor was replaced by necessity, Dalton found his stage.",
 
                     "His heart is shaped by pragmatism and determination. He doesn't fight solely for money but to prove his worth to a world that often rejected him. Guided by clear rules and objectives, his greatest desire is to become the undisputed champion—a title that transcends the ropes of the ring and echoes through the dark alleys.",
 
-                    "In the small apartment above the old boxing academy, Fabian trains tirelessly. His fists, infused with magic, deliver blows that go beyond the physical. He seeks to enhance his magical abilities, knowing that true victory lies not only in the glory of the ring but also in the hope he can bring to the underprivileged.",
+                    "In the small apartment above the old boxing academy, Dalton trains tirelessly. His fists, infused with magic, deliver blows that go beyond the physical. He seeks to enhance his magical abilities, knowing that true victory lies not only in the glory of the ring but also in the hope he can bring to the underprivileged.",
 
-                    "The worn walls bear witness to his daily efforts. Fabian dreams of a future where the streets are no longer his battlefield, where his magic can illuminate dark hearts and offer a chance at redemption."
+                    "The worn walls bear witness to his daily efforts. Dalton dreams of a future where the streets are no longer his battlefield, where his magic can illuminate dark hearts and offer a chance at redemption."
                 ]
             }
         }
     },{
-        id: 'card5',
-        posicao: '#006',
+        id: 'card3',
+        posicao: '#004',
+        raridade: 'super-rare',
+        classe: 'witch',
+        nome: 'Rosalyn',
+        idade: '126',
+        mensagem: {
+            portugues: "Minha vontate ecoa, tão firme quanto as árvores anciãs. Sob o firmamento, prometo que não descansarei até encontrar sua luz perdida, pois em seus abraços, descubro a verdadeira essência da vida.",
+            ingles: 'My will echoes, as steadfast as the ancient trees. Beneath the firmament, I vow not to rest until I find your lost light, for in your embrace, I discover the true essence of life.'
+        },
+        sobre: {
+            portugues: {
+                classe: 'Bruxa',
+                raridade: 'Super-raro',
+                lore: [
+                    'Rosalyn é uma druida que vive na antiga e encantada floresta de Eldergrove. Ela tem 125 anos, mas sua energia é equivalente à de uma jovem, e sua conexão com a natureza tem raízes mais profundas do que se pode perceber. Ela fala abertamente com plantas e animais. Seu cajado, chamado Etherlight, é esculpido a partir de um lendário carvalho e incrustado com uma esmeralda. Ele é tanto sua ferramenta quanto seu companheiro.',
+
+                    'É entusiasta da vida e de tudo relacionado: desde o orvalho nas folhas até a migração das aves. Ela é firme como uma tempestade contra qualquer ameaça à sua casa em Eldergrove. Com a mesma determinação, Rosalyn busca pelo destino de sua mãe desaparecida.',
+                    
+                    'A história de Rosalyn é repleta de triunfos e tragédias. Ela literalmente viu o Templo de Cristal desmoronar durante a Guerra das Sombras e testemunhou o surgimento e a queda de reinos. Sua busca por respostas sobre o destino de sua mãe a levou por muitas missões, algumas até os postos mais distantes do mundo conhecido.',
+                    
+                    'No entanto, Rosalyn está determinada na busca pelo Mistério do Crepúsculo Eterno — a profecia que prevê o fim dos tempos quando a luz e a escuridão se encontram, e a partir deles surge uma nova era para Eldergrove e o mundo — acreditando profundamente que essa sabedoria antiga detém a chave para salvar sua casa e encontrar sua mãe.'
+                ]
+            },
+            ingles: {
+                classe: 'Witch',
+                raridade: 'Super-rare',
+                lore: [
+                    "Rosalyn is a druid, living in the ancient, enchanted forest of Eldergrove. She is 125 herself, so her energy equals that of a youth, and her connection with nature has roots deeper than one could ever notice. She speaks openly with plants and animals alike. Her staff, called Etherlight, is carved from a legendary oak tree and inlaid with an emerald. It is both her tool and companion.",
+
+                    "She's enthusiastic about life and everything related: from dew on leaves to bird migration. She is solid like a storm against any threat to her home in Eldergrove. With the same drive, she keeps looking for her missing mother's fate.",
+                    
+                    "Rosalyn's history is filled with triumphs and tragedies. She had literally seen the Crystal Temple crashing during the War of Shadows and witnessed the rise and fall of kingdoms. Her search for answers about her mother's destiny led her through many quests, some to the farthest outposts of the known world.",
+                    
+                    "Rosalyn, though, is set on the quest for the Mystery of Eternal Twilight—the prophecy foretelling the end of time when light and darkness meet, and from them rings in an entire new age for Eldergrove and the world—believing deep within that this ancient wisdom holds the key to saving her home and finding her mother."
+                ]
+            }
+        }
+    },{
+        id: 'card4',
+        posicao: '#005',
         raridade: 'rare',
         classe: 'shooter',
         nome: 'Lilith Sharpwind',
@@ -238,8 +195,8 @@ cartas = [
             }
         }
     },{
-        id: 'card6',
-        posicao: '#007',
+        id: 'card5',
+        posicao: '#006',
         raridade: 'common',
         classe: 'warrior',
         nome: 'Edwirges Blackthorn',
@@ -281,8 +238,8 @@ cartas = [
             }
         }
     },{
-        id: 'card7',
-        posicao: '#008',
+        id: 'card6',
+        posicao: '#007',
         raridade: 'epic',
         classe: 'witch',
         nome: 'Kairos Luminar',
@@ -316,6 +273,88 @@ cartas = [
                     "Now, Kairos is always helping those in need and fighting against the darkness. He is still an apprentice, so he does his best to learn new magical skills and how to wield the \"Dragon's Breath\" effectively. Peaceful by nature, he knows when a fight must be fought and calmly, with deliberation, faces his opponents. His true goal is not recognition or personal glory, but rather to preserve harmony and hope in a world often shaken by evil.",
 
                     "Kairos seeks to be a beacon of justice, indicating that courage and compassion can, in fact, prevail even in the darkest moments."
+                ]
+            }
+        }
+    },{
+        id: 'card7',
+        posicao: '#008',
+        raridade: 'legendary',
+        classe: 'fairy',
+        nome: 'Elizash Flowers',
+        idade: '24',
+        mensagem: {
+            portugues: 'Nas asas da lua, danço com véu de pureza e intensidade. Sou guardiã dos sentimentos profundos, sussurrando segredos às estrelas. Meus olhos são as constelações.',
+            ingles: 'On the wings of the moon, I dance with a veil of purity and intensity. I am the guardian of deep feelings, whispering secrets to the stars. My eyes are the constellations.'
+        },
+        sobre: {
+            portugues: {
+                classe: 'Fada',
+                raridade: 'Lendário',
+                lore: [
+                    'Elizash Flowers possui um olhar profundo, quase clarividente. Gerada das pétalas de um carvalho milenar, Elizash é a filha da natureza, instruída pela própria árvore nos segredos da vida e da proteção.',
+
+                    'Com uma aura compassiva e sensível, Elizash dedica-se a curar o mundo, buscando a harmonia entre humanos, fadas e todas as criaturas mágicas que compartilham o reino. Seu objetivo é encontrar o Pergaminho Esmeralda, um relicário de magia ancestral capaz de restaurar a terra devastada e renovar a esperança.',
+                    
+                    'O círculo de cogumelos no coração da floresta encantada é seu lar. Lá, ela cuida das plantas com ternura, curando suas feridas e nutrindo-as com amor. Quando a lua se ergue, Elizash entoa canções de esperança, suas notas flutuando pelo ar como um bálsamo para os corações cansados.',
+                    
+                    'Elizash não percorre sua jornada em solidão; ela é acompanhada por uma figura etérea, um espírito da floresta feito de névoa e folhagem, cuja presença é tão calmante quanto a brisa da manhã e tão misteriosa quanto os segredos que a floresta guarda. Com cada passo que dá, Elizash deixa um rastro de vida e crescimento – onde antes havia solo estéril, agora brotam flores; onde havia silêncio, agora se ouve o canto dos pássaros.',
+                    
+                    'Sua jornada é um testamento à esperança que ainda reside nos corações de todos os seres vivos. Com o Pergaminho Esmeralda como sua estrela guia, Elizash continua sua busca incansável, com a fé de que a harmonia prevalecerá.'
+                ],
+            },
+            ingles: {
+                classe: 'Fairy',
+                raridade: 'Legendary',
+                lore: [
+                    "Elizash Flowers possesses a deep, almost clairvoyant gaze. Born from the petals of an ancient oak tree, Elizash is the daughter of nature, instructed by the very tree in the secrets of life and protection.",
+
+                    "With a compassionate and sensitive aura, Elizash dedicates herself to healing the world, seeking harmony among humans, fairies, and all magical creatures who share the realm. Her goal is to find the Emerald Scroll, a reliquary of ancestral magic capable of restoring the devastated land and renewing hope.",
+
+                    "The circle of mushrooms in the heart of the enchanted forest is her home. There, she tends to the plants with tenderness, healing their wounds and nurturing them with love. When the moon rises, Elizash sings songs of hope, her notes floating through the air like a balm for weary hearts.",
+
+                    "Elizash doesn't journey alone; she is accompanied by an ethereal figure, a forest spirit made of mist and foliage, whose presence is as calming as the morning breeze and as mysterious as the secrets the forest holds. With each step she takes, Elizash leaves a trail of life and growth—where once there was barren soil, now flowers bloom; where there was silence, now birdsong fills the air.",
+
+                    "Her journey is a testament to the hope that still resides in the hearts of all living beings. Guided by the Emerald Scroll, Elizash continues her tireless quest, with faith that harmony will prevail."
+                ]
+            }
+        }
+    },{
+        id: 'card8',
+        posicao: '#009',
+        raridade: 'super-rare',
+        classe: 'fairy',
+        nome: 'Becky Flowers',
+        idade: '16',
+        mensagem: {
+            portugues: 'A alegria e a leveza são as cores e pinceladas que transformam a vida em arte, enquanto a bondade é o verniz que protege e dá brilho à nossa humanidade compartilhada.',
+            ingles: 'Joy and lightness are the colors and brushstrokes that transform life into art, while kindness is the varnish that protects and gives shine to our shared humanity.'
+        },
+        sobre: {
+            portugues: {
+                classe: 'Fada',
+                raridade: 'Super-raro',
+                lore: [
+                    'Becky Flowers é a personificação da curiosidade e do otimismo. Irmã mais nova de Elizash, ela compartilha com ela a origem mágica, tendo brotado da mesma árvore ancestral, e uma profunda conexão com a natureza que as cerca.',
+
+                    'Movida por um espírito altruísta e uma visão otimista, Becky tem o sonho de tecer laços entre as diversas raças mágicas do reino. Ela acredita firmemente na possibilidade de uma coexistência harmoniosa e trabalha incansavelmente para tornar esse sonho realidade.',
+                    
+                    'Desde menor, ela sonha com a criação de uma escola inclusiva, um lugar de aprendizado e entendimento mútuo, onde todas as criaturas e humanos possam compartilhar conhecimento e crescer juntos em harmonia.',
+                    
+                    'Becky reside em uma encantadora casinha de cogumelo, não muito distante da morada de sua irmã, onde cada objeto colecionado conta uma história e cada livro antigo é uma aventura à espera. Ela passa seus dias explorando os mistérios dos grimórios e suas noites contemplando as estrelas, sempre sonhando com um futuro de paz e unidade para todos os seres do reino encantado.'
+                ]
+            },
+            ingles: {
+                classe: 'Fairy',
+                raridade: 'Super-rare',
+                lore: [
+                    "Becky Flowers is the embodiment of curiosity and optimism. Younger sister to Elizash, she shares the magical origin with her, having sprouted from the same ancestral tree, and a deep connection with the nature that surrounds them.",
+
+                    "Driven by an altruistic spirit and an optimistic vision, Becky dreams of weaving bonds among the diverse magical races of the realm. She firmly believes in the possibility of harmonious coexistence and tirelessly works to make that dream a reality.",
+                    
+                    "Since childhood, she has envisioned creating an inclusive school — a place of learning and mutual understanding — where all creatures and humans can share knowledge and grow together in harmony.",
+                    
+                    "Becky resides in a charming mushroom cottage, not far from her sister's abode, where each collected object tells a story and every ancient book is an adventure waiting to unfold. She spends her days exploring the mysteries of grimoires and her nights contemplating the stars, always dreaming of a future of peace and unity for all beings in the enchanted kingdom."
                 ]
             }
         }

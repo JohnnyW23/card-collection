@@ -103,7 +103,7 @@ function ativarCardBox (){
 
     // Eventos ao clicar nas setas de direção do slide de cartas
     $('.arrow-circle-wrap').click(function(){
-        if(!transition){
+        if(!transition && tela.colecao){
             transition = true;
             setTimeout(() => {transition = false}, 500);
 
@@ -165,7 +165,7 @@ function ativarCardBox (){
 
     // Função que rotaciona das cartas ao clicar nelas
     $(document).on("click", ".selected", function(){
-        if(!flipping){
+        if(!flipping && tela.colecao){
             flipping = true;
             setTimeout(() => {flipping = false}, 500);
 
@@ -188,11 +188,15 @@ function ativarCardBox (){
                 $(this).find('.carta').css('scale', '1').css('box-shadow', '0 0 20px black')
             }, 250);
         }
+        
     })
 
     // Ao clicar no botão para voltar, a card box também é restaurada pro estado inicial
     $('#btn-voltar').click(function(){
-        if(!tela.main){
+        if(!tela.main && tela.colecao && !transition){
+            if($('.carta-ordem').is('.ordem-active'))
+                $('.carta-ordem').click();
+
             tela.main = true;
             tela.colecao = false;
 
@@ -202,9 +206,6 @@ function ativarCardBox (){
             setTimeout(() => {
                 $('.main-wraper').fadeIn(500)
             }, 500);
-            setTimeout(() => {
-                $('.card-box').html(tela.colecaoInitial)
-            }, 1000);
         }
     })
 }
@@ -213,7 +214,7 @@ function ativarCardBox (){
 
 // Função que anima a janela das ordens de carta
 $('.carta-ordem').click(function(){
-    if(!animacao.ordemOpen){
+    if(!animacao.ordemOpen && tela.colecao){
         animacao.ordemOpen = true;
         setTimeout(() => {animacao.ordemOpen = false}, 500);
         $(this).toggleClass('ordem-active');
@@ -222,7 +223,7 @@ $('.carta-ordem').click(function(){
 
 // Função que determina qual ordem/raridade visualizar
 $('.ordem-opcoes li').click(function(){
-    if(!animacao.ordemSlct){
+    if(!animacao.ordemSlct && tela.colecao){
         animacao.ordemSlct = true
         setTimeout(() => {animacao.ordemSlct = false}, 1000);
 
