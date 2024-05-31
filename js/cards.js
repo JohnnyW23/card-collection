@@ -197,6 +197,49 @@ cartas = [
     },{
         id: 'card5',
         posicao: '#006',
+        raridade: 'epic',
+        classe: 'rogue',
+        nome: 'Dorian Perrusk',
+        idade: '21',
+        mensagem: {
+            portugues: "Minha flauta esconde o refrão da vingança. Ninguém nunca deve subestimar o mais dócil cordeiro. Aqueles que adulteram a balança da justica encontrarão a morte inevitável no palco do desespero.",
+            ingles: "My flute hides the chorus of vengeance. One must never underestimate the gentlest lamb. Those who tamper with the scales of justice will find inevitable death on the stage of despair."
+        },
+        sobre: {
+            portugues: {
+                classe: 'Ladino',
+                raridade: 'Épico',
+                lore: [
+                    'Dorian Perrusk veio de uma família de músicos renomados na pequena vila de Emberfall. Ele era mestre em tecer melodias que capturavam a alma dos ouvintes. No entanto, uma inquietação crescia dentro dele; uma convicção de que sua música carregava um propósito maior e mais obscuro.',
+
+                    'Em uma noite fatídica, Dorian cruzou caminhos com a Ordem da Retribuição, uma fraternidade secreta de assassinos que opera além das leis dos homens. Eles são os algozes dos príncipes corrompidos, e viram em Dorian não apenas um artista de talento, mas uma arma viva para sua causa. A música de Dorian tinha o poder de seduzir e destruir, e a Ordem desejava compor através dele uma sinfonia de vingança.',
+                    
+                    'Abandonando seu lar e herança, Dorian mergulhou em um treinamento implacável sob a tutela da Ordem. Ele se tornou um mestre das lâminas ocultas e dos venenos letais. Cada movimento seu era uma dança com a morte.',
+                    
+                    'Sob o disfarce de um músico itinerante, ele infiltra-se nos salões da nobreza, usando sua flauta encantada para manipular os fios do poder. Em cada nota, ele tece uma rede de intrigas, aguardando o momento de atacar.',
+                    
+                    'Por trás de sua máscara de bardo, Dorian esconde a verdadeira essência de sua alma. Ele é o Ladrão de Segredos, um herói anônimo cuja melodia é o sussurro da retribuição.'
+                ]
+            },
+            ingles: {
+                classe: 'Rogue',
+                raridade: 'Epic',
+                lore: [
+                    "Dorian Perrusk came from a family of renowned musicians in the small village of Emberfall. He was a master at weaving melodies that captured the souls of his listeners. However, a restlessness grew within him; a conviction that his music carried a greater and darker purpose.",
+
+                    "One fateful night, Dorian crossed paths with the Order of Retribution, a secret brotherhood of assassins that operates beyond the laws of men. They are the executioners of corrupt princes and saw in Dorian not just a talented artist, but a living weapon for their cause. Dorian's music had the power to seduce and destroy, and the Order desired to compose a symphony of vengeance through him.",
+
+                    "Abandoning his home and heritage, Dorian plunged into relentless training under the tutelage of the Order. He became a master of hidden blades and lethal poisons. Each of his movements was a dance with death.",
+
+                    "Under the guise of a wandering musician, he infiltrates the halls of nobility, using his enchanted flute to manipulate the threads of power. With each note, he weaves a web of intrigue, awaiting the moment to strike.",
+
+                    "Behind his bard's mask, Dorian hides the true essence of his soul. He is the Thief of Secrets, an anonymous hero whose melody is the whisper of retribution."
+                ]
+            }
+        }
+    },{
+        id: 'card6',
+        posicao: '#007',
         raridade: 'common',
         classe: 'warrior',
         nome: 'Edwirges Blackthorn',
@@ -238,8 +281,8 @@ cartas = [
             }
         }
     },{
-        id: 'card6',
-        posicao: '#007',
+        id: 'card7',
+        posicao: '#008',
         raridade: 'rare',
         classe: 'witch',
         nome: 'Kairos Luminar',
@@ -277,8 +320,8 @@ cartas = [
             }
         }
     },{
-        id: 'card7',
-        posicao: '#008',
+        id: 'card8',
+        posicao: '#009',
         raridade: 'legendary',
         classe: 'fairy',
         nome: 'Elysia Flowers',
@@ -320,8 +363,8 @@ cartas = [
             }
         }
     },{
-        id: 'card8',
-        posicao: '#009',
+        id: 'card9',
+        posicao: '#0010',
         raridade: 'super-rare',
         classe: 'fairy',
         nome: 'Becky Flowers',
@@ -359,8 +402,8 @@ cartas = [
             }
         }
     },{
-        id: 'card9',
-        posicao: '#010',
+        id: 'card10',
+        posicao: '#011',
         raridade: 'epic',
         classe: 'warrior',
         nome: 'Fabian Temphest',
@@ -399,3 +442,16 @@ cartas = [
         }
     }
 ]
+
+
+/*
+
+Dorian Perrusk é filho de uma família de músicos renomados na pequena vila de Emberfall. Ele era mestre em tecer melodias que capturavam a alma dos ouvintes. No entanto, uma inquietação crescia dentro dele; uma convicção de que sua música carregava um propósito maior, uma força capaz de tocar os recônditos mais obscuros da existência.
+
+Em uma noite fatídica, Dorian cruzou caminhos com a Ordem da Retribuição, uma fraternidade secreta de assassinos que operava além das leis dos homens. Eles eram os caçadores de almas corrompidas, e viram em Dorian não apenas um artista de talento, mas uma arma viva para sua causa. A música de Dorian tinha o poder de seduzir e destruir, e a Ordem desejava compor através dele uma sinfonia de vingança.
+
+Abandonando seu lar e herança, Dorian mergulhou em um treinamento implacável sob a tutela da Ordem. Ele se tornou um mestre das lâminas ocultas e dos venenos letais. Cada movimento seu era uma dança com a morte, cada assassinato, uma nota tocada na eterna partitura da justiça.
+
+Sob o disfarce de um músico itinerante, ele infiltra-se nos salões da nobreza, usando sua flauta encantada para desvendar segredos e manipular os fios do poder. Em cada nota, ele tece uma rede de intrigas, e em cada silêncio, ele observa, aguardando o momento de atacar.
+
+Por trás de sua máscara de bardo, Dorian esconde a verdadeira essência de sua alma. Ele é o Ladrão de Segredos, a voz silenciosa da justiça num mundo sufocado pelas trevas, um herói anônimo cuja melodia é o sussurro da retribuição.*/
