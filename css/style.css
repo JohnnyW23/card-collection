@@ -15,7 +15,10 @@ html, body {
     background-color: black;
     user-select: none;
 }
-
+@font-face {
+    font-family: 'Breathe-Fire';
+    src: url(../fonts/BreatheFireIii-PKLOB.ttf);
+}
 
 /***** SESSAO IDIOMAS *****/
 
@@ -102,10 +105,10 @@ header .container h1 {
     color: white;
     display: block;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    font-family: Breathe-Fire;
+    font-weight: lighter;
+    font-size: 40px;
+    text-shadow: 0 0 5px white;
 }
 
 
@@ -150,7 +153,7 @@ header .container h1 {
     margin: 0px auto;
     z-index: 1;
     position: relative;
-    top: 40px;
+    top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
@@ -344,7 +347,6 @@ header .container h1 {
     padding: 20px;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(15px);
     box-shadow: 5px 5px 20px black;
 }
 
@@ -360,7 +362,7 @@ header .container h1 {
     color: white;
     overflow: hidden;
     z-index: 2;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     text-align: center;
     cursor: pointer;
 }
@@ -476,24 +478,24 @@ h3.common {
     box-shadow: 0 0 5px grey;
 }
 h3.rare {
-    border: 1px solid lime;
-    color: lime;
-    box-shadow: 0 0 5px lime;
-}
-h3.super-rare {
     border: 1px solid aqua;
     color: aqua;
     box-shadow: 0 0 5px aqua;
 }
-h3.epic{
+h3.super-rare {
+    border: 1px solid #ff33ff;
+    color: #ff33ff;
+    box-shadow: 0 0 5px #ff33ff;
+}
+h3.epic {
+    border: 1px solid #ff3333;
+    color: #ff3333;
+    box-shadow: 0 0 5px #ff3333;
+}
+h3.legendary{
     border: 1px solid gold;
     color: gold;
     box-shadow: 0 0 5px gold;
-}
-h3.legendary {
-    border: 1px solid fuchsia;
-    color: fuchsia;
-    box-shadow: 0 0 5px fuchsia;
 }
 
 .carta-img {
@@ -803,9 +805,6 @@ footer .container {
     .idioma h1 {
         font-size: 25px;
     }
-    header h1 {
-        font-size: 22px;
-    }
 
 
     .cabo-wraper {
@@ -949,11 +948,5 @@ footer .container {
     }
     .lore-wraper {
         padding-top: 10px;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    header .container h1 {
-        font-size: 25px;
     }
 }

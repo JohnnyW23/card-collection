@@ -77,16 +77,16 @@ function construirCartas(obj, clear=false){
 
     girarBrilho = setInterval(() => {
         animacao.graus = (animacao.graus + 1) % 360;
-        let gradient = 'linear-gradient(' + animacao.graus + 'deg, darkmagenta, magenta, rgb(255, 120, 255), white, var(--cor), var(--cor), var(--cor), var(--cor))';
+        let gradient = 'linear-gradient(' + animacao.graus + 'deg, rgb(226, 192, 0), yellow, rgb(255, 255, 120), white, var(--cor), var(--cor), var(--cor), var(--cor))';
         $('div.legendary').css('background', gradient);
 
-        gradient = 'linear-gradient(' + animacao.graus + 'deg, rgb(226, 192, 0), yellow, rgb(255, 255, 120), white, var(--cor), var(--cor), var(--cor), var(--cor))';
+        gradient = 'linear-gradient(' + animacao.graus + 'deg, rgb(200, 0, 0), red, rgb(255, 120, 120), white, var(--cor), var(--cor), var(--cor), var(--cor))';
         $('div.epic').css('background', gradient);
 
-        gradient = 'linear-gradient(' + animacao.graus + 'deg, blue, rgb(0, 247, 255), rgb(132, 251, 255), white, var(--cor), var(--cor), var(--cor), var(--cor))';
+        gradient = 'linear-gradient(' + animacao.graus + 'deg, darkmagenta, magenta, rgb(255, 120, 255), white, var(--cor), var(--cor), var(--cor), var(--cor))';
         $('div.super-rare').css('background', gradient);
 
-        gradient = 'linear-gradient(' + animacao.graus + 'deg, rgb(0, 68, 0), lime, greenyellow, white, var(--cor), var(--cor), var(--cor), var(--cor))';
+        gradient = 'linear-gradient(' + animacao.graus + 'deg, blue, rgb(0, 247, 255), rgb(132, 251, 255), white, var(--cor), var(--cor), var(--cor), var(--cor))';
         $('div.rare').css('background', gradient);
 
         gradient = 'linear-gradient(' + animacao.graus + 'deg, grey, silver, #ccc, white, var(--cor), var(--cor), var(--cor), var(--cor))';
@@ -263,42 +263,46 @@ function definirDeck(id){
     let deck = []
     let crescente = ['legendary', 'epic', 'super-rare', 'rare', 'common']
 
-    if(id == 'crescente'){
-        iterarRaridade(cartas, deck, crescente);
+    if(id == 'todas'){
+        ativarTxtShd('white');
+        deck = cartas
+
+    }else if(id == 'crescente'){
         ativarTxtShd('white')
+        iterarRaridade(cartas, deck, crescente);
 
     }else if(id == 'decrescente'){
+        ativarTxtShd('white');
         crescente.reverse();
         iterarRaridade(cartas, deck, crescente);
-        ativarTxtShd('white');
-
-    }else if(id == 'legendary'){
-        ativarTxtShd('fuchsia');
-        deck = cartas
-
-    }else if(id == 'epic'){
-        ativarTxtShd('gold');
-        deck = cartas
-
-    }else if(id == 'super-rare'){
-        ativarTxtShd('aqua');
-        deck = cartas
-
-    }else if(id == 'rare'){
-        ativarTxtShd('lime');
-        deck = cartas
-
-    }else if(id == 'common'){
-        ativarTxtShd('grey');
-        deck = cartas
 
     }else if(id == 'reverse'){
         ativarTxtShd('white');
         deck = cartas.slice().reverse();
 
     }else{
-        ativarTxtShd('white');
-        deck = cartas
+        if(id == 'legendary'){
+            ativarTxtShd('gold');
+            deck = cartas
+    
+        }else if(id == 'epic'){
+            ativarTxtShd('red');
+            deck = cartas
+    
+        }else if(id == 'super-rare'){
+            ativarTxtShd('fuchsia');
+            deck = cartas
+    
+        }else if(id == 'rare'){
+            ativarTxtShd('aqua');
+            transferirCartas(cartas, deck, id)
+    
+        }else if(id == 'common'){
+            ativarTxtShd('grey');
+            deck = cartas
+        }
+
+
     }
 
     $('.card-box').html('');

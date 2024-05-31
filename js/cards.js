@@ -240,7 +240,7 @@ cartas = [
     },{
         id: 'card6',
         posicao: '#007',
-        raridade: 'epic',
+        raridade: 'rare',
         classe: 'witch',
         nome: 'Kairos Luminar',
         idade: '23',
@@ -251,7 +251,7 @@ cartas = [
         sobre: {
             portugues: {
                 classe: 'Bruxo',
-                raridade: 'Épico',
+                raridade: 'Raro',
                 lore: [
                     "Kairos Luminar viveu a juventude como um recluso nas profundezas das florestas de Elorith, lendo pergaminhos antigos, aprendendo sob a tranquilidade das árvores e riachos. A virada de eventos em sua vida surgiu um dia quando ele libertou um bebê dragão refém de caçadores. Com um resgate ousado e prudente sem premeditação, Kairos arriscou tudo para libertar a criatura, enfrentando os caçadores e derrotando-os.",
 
@@ -264,7 +264,7 @@ cartas = [
             },
             ingles: {
                 classe: 'Witch',
-                raridade: 'Epic',
+                raridade: 'Rare',
                 lore: [
                     "Kairos Luminar lived his youth as a recluse in the depths of the forests of Elorith, reading ancient scrolls, learning under the tranquility of the trees and streams. The turning point in his life came one day when he freed a baby dragon held hostage by hunters. With a bold and prudent rescue without forethought, Kairos risked everything to free the creature, facing the hunters and defeating them.",
 
@@ -281,41 +281,41 @@ cartas = [
         posicao: '#008',
         raridade: 'legendary',
         classe: 'fairy',
-        nome: 'Elizash Flowers',
+        nome: 'Elysia Flowers',
         idade: '24',
         mensagem: {
-            portugues: 'Nas asas da lua, danço com véu de pureza e intensidade. Sou guardiã dos sentimentos profundos, sussurrando segredos às estrelas. Meus olhos são as constelações.',
-            ingles: 'On the wings of the moon, I dance with a veil of purity and intensity. I am the guardian of deep feelings, whispering secrets to the stars. My eyes are the constellations.'
+            portugues: 'Nas asas da lua, danço com véu de pureza e intensidade. Sou a Estrela da Esperança, sussurrando segredos à deriva do esquecimento. Meus olhos estão nos abismos dos corações.',
+            ingles: 'On the wings of the moon, I dance with a veil of purity and intensity. I am the Star of Hope, whispering secrets adrift in oblivion. My eyes dwell in the abysses of hearts.'
         },
         sobre: {
             portugues: {
                 classe: 'Fada',
                 raridade: 'Lendário',
                 lore: [
-                    'Elizash Flowers possui um olhar profundo, quase clarividente. Gerada das pétalas de um carvalho milenar, Elizash é a filha da natureza, instruída pela própria árvore nos segredos da vida e da proteção.',
+                    "Elysia é uma figura mística cuja presença é tão rara quanto fascinante. Seus olhos profundos refletem a sabedoria do universo, como se ela carregasse consigo os segredos das estrelas.",
 
-                    'Com uma aura compassiva e sensível, Elizash dedica-se a curar o mundo, buscando a harmonia entre humanos, fadas e todas as criaturas mágicas que compartilham o reino. Seu objetivo é encontrar o Pergaminho Esmeralda, um relicário de magia ancestral capaz de restaurar a terra devastada e renovar a esperança.',
+                    "Ela foi gerada por uma intrigante árvore milenar, cujas raízes se entrelaçam com as estrelas no subsolo. Sua varinha, companheira inseparável desde suas origens, possui uma estrela incrustada na ponta, concedendo-lhe poderes celestiais.",
                     
-                    'O círculo de cogumelos no coração da floresta encantada é seu lar. Lá, ela cuida das plantas com ternura, curando suas feridas e nutrindo-as com amor. Quando a lua se ergue, Elizash entoa canções de esperança, suas notas flutuando pelo ar como um bálsamo para os corações cansados.',
+                    "Profundamente empática, ela é sensível às necessidades dos outros. Sente a dor do mundo e busca aliviar o sofrimento onde quer que possa. No entanto, apesar de sua força formidável, nunca usa seu poder para fins egoístas. Sua prioridade é proteger os mais fracos e vulneráveis.",
                     
-                    'Elizash não percorre sua jornada em solidão; ela é acompanhada por uma figura etérea, um espírito da floresta feito de névoa e folhagem, cuja presença é tão calmante quanto a brisa da manhã e tão misteriosa quanto os segredos que a floresta guarda. Com cada passo que dá, Elizash deixa um rastro de vida e crescimento – onde antes havia solo estéril, agora brotam flores; onde havia silêncio, agora se ouve o canto dos pássaros.',
+                    'Elysia é conhecida como a "Estrela da Esperança". Viajando pelo mundo, ela busca resgatar os sonhos perdidos da humanidade, aqueles anseios profundos que foram abandonados ou negligenciados. Elysia acredita que é na realização desses sonhos que a verdadeira magia e o propósito da vida são encontrados.',
                     
-                    'Sua jornada é um testamento à esperança que ainda reside nos corações de todos os seres vivos. Com o Pergaminho Esmeralda como sua estrela guia, Elizash continua sua busca incansável, com a fé de que a harmonia prevalecerá.'
+                    "Quando está por perto, feridas se fecham e doenças desaparecem. Elysia emana uma aura de cura, como se trouxesse consigo a própria essência da vida. Alguns a veem como uma deusa, enquanto outros a temem como uma força incontrolável."
                 ],
             },
             ingles: {
                 classe: 'Fairy',
                 raridade: 'Legendary',
                 lore: [
-                    "Elizash Flowers possesses a deep, almost clairvoyant gaze. Born from the petals of an ancient oak tree, Elizash is the daughter of nature, instructed by the very tree in the secrets of life and protection.",
+                    "Elysia is a mystical figure whose presence is as rare as it is fascinating. Her deep eyes reflect the wisdom of the universe, as if she carries the secrets of the stars with her.",
 
-                    "With a compassionate and sensitive aura, Elizash dedicates herself to healing the world, seeking harmony among humans, fairies, and all magical creatures who share the realm. Her goal is to find the Emerald Scroll, a reliquary of ancestral magic capable of restoring the devastated land and renewing hope.",
+                    "She was generated by an intriguing millennial tree, whose roots intertwine with the stars underground. Her wand, an inseparable companion since her origins, has a star embedded at the tip, granting her celestial powers.",
 
-                    "The circle of mushrooms in the heart of the enchanted forest is her home. There, she tends to the plants with tenderness, healing their wounds and nurturing them with love. When the moon rises, Elizash sings songs of hope, her notes floating through the air like a balm for weary hearts.",
+                    "Being deeply empathetic, she is sensitive to the needs of others. She feels the pain of the world and seeks to alleviate suffering wherever she can. However, despite her formidable strength, she never uses her power for selfish purposes. Her priority is to protect the weakest and most vulnerable.",
 
-                    "Elizash doesn't journey alone; she is accompanied by an ethereal figure, a forest spirit made of mist and foliage, whose presence is as calming as the morning breeze and as mysterious as the secrets the forest holds. With each step she takes, Elizash leaves a trail of life and growth—where once there was barren soil, now flowers bloom; where there was silence, now birdsong fills the air.",
+                    "Elysia is known as the \"Star of Hope\". Traveling the world, she seeks to rescue humanity's lost dreams, those deep longings that have been abandoned or neglected. Elysia believes that it is in the realization of these dreams that the true magic and purpose of life are found.",
 
-                    "Her journey is a testament to the hope that still resides in the hearts of all living beings. Guided by the Emerald Scroll, Elizash continues her tireless quest, with faith that harmony will prevail."
+                    "When she is around, wounds close and diseases disappear. Elysia emanates a healing aura, as if she brings with her the very essence of life. Some see her as a goddess, while others fear her as an uncontrollable force."
                 ]
             }
         }
@@ -335,7 +335,7 @@ cartas = [
                 classe: 'Fada',
                 raridade: 'Super-raro',
                 lore: [
-                    'Becky Flowers é a personificação da curiosidade e do otimismo. Irmã mais nova de Elizash, ela compartilha com ela a origem mágica, tendo brotado da mesma árvore ancestral, e uma profunda conexão com a natureza que as cerca.',
+                    'Becky Flowers é a personificação da curiosidade e do otimismo. Irmã mais nova de Elysia, ela compartilha com ela a origem mágica, tendo brotado da mesma árvore ancestral, e uma profunda conexão com a natureza que as cerca.',
 
                     'Movida por um espírito altruísta e uma visão otimista, Becky tem o sonho de tecer laços entre as diversas raças mágicas do reino. Ela acredita firmemente na possibilidade de uma coexistência harmoniosa e trabalha incansavelmente para tornar esse sonho realidade.',
                     
@@ -348,13 +348,52 @@ cartas = [
                 classe: 'Fairy',
                 raridade: 'Super-rare',
                 lore: [
-                    "Becky Flowers is the embodiment of curiosity and optimism. Younger sister to Elizash, she shares the magical origin with her, having sprouted from the same ancestral tree, and a deep connection with the nature that surrounds them.",
+                    "Becky Flowers is the embodiment of curiosity and optimism. Younger sister to Elysia, she shares the magical origin with her, having sprouted from the same ancestral tree, and a deep connection with the nature that surrounds them.",
 
                     "Driven by an altruistic spirit and an optimistic vision, Becky dreams of weaving bonds among the diverse magical races of the realm. She firmly believes in the possibility of harmonious coexistence and tirelessly works to make that dream a reality.",
                     
                     "Since childhood, she has envisioned creating an inclusive school — a place of learning and mutual understanding — where all creatures and humans can share knowledge and grow together in harmony.",
                     
                     "Becky resides in a charming mushroom cottage, not far from her sister's abode, where each collected object tells a story and every ancient book is an adventure waiting to unfold. She spends her days exploring the mysteries of grimoires and her nights contemplating the stars, always dreaming of a future of peace and unity for all beings in the enchanted kingdom."
+                ]
+            }
+        }
+    },{
+        id: 'card9',
+        posicao: '#010',
+        raridade: 'epic',
+        classe: 'warrior',
+        nome: 'Fabian Temphest',
+        idade: '24',
+        mensagem: {
+            portugues: 'Em meio às torres douradas e véus de traição, descobri a verdadeira nobreza na força inabalável da justiça. Tua redenção não será encontrada em cortejos, mas sim na forja da vontade indomável.',
+            ingles: "Amidst the gilded towers and veils of treachery, I have discovered true nobility in the unwavering strength of justice. Your redemption shall not be found in processions, but rather in the forge of indomitable will."
+        },
+        sobre: {
+            portugues: {
+                classe: 'Guerreiro',
+                raridade: 'Épico',
+                lore: [
+                    'Fabian Temphest tem uma presença que irradia tanto nobreza quanto autoridade. Ele é originário de Aureatia, uma cidade resplandecente onde as torres e palácios são adornados com ouro e habitados por pessoas de alta linhagem. Fabian cresceu acreditando ser parte dessa elite, mas sua vida foi abalada por revelações sombrias.',
+
+                    'Dotado de um poder singular, Fabian consegue invocar e controlar uma corrente de ferro eletrificada, cuja extremidade se transforma na cabeça de uma serpente, capaz de atacar com precisão letal. Sua habilidade é uma manifestação física de sua linhagem especial, uma que o governo de Aureatia temia e desejava controlar.',
+                    
+                    'Fabian é um homem de ações, não de palavras. Ele não tolera ineficiência ou desleixo. Quando descobriu que seus verdadeiros pais foram assassinados pelo próprio reino que o adotou, Fabian não se entregou à tristeza. Em vez disso, sua raiva se transformou em determinação implacável. Ele se rebelou contra o reino, enfrentando seus inimigos com uma ferocidada que Aureatia jamais viu. Porém, o Mago da Corte abriu um portal e baniu Fabian para o nosso mundo.',
+                    
+                    'Agora, Fabian navega nesta nova realidade, aprendendo sobre suas regras e nuances, e procura uma maneira de retornar a Aureatia para confrontar aqueles que traíram sua confiança e reivindicar seu lugar de direito.'
+                ]
+            },
+            ingles: {
+                classe: 'Warrior',
+                raridade: 'Epic',
+                lore: [
+                    "Fabian Tempest has a presence that radiates both nobility and authority. He hails from Aureatia, a resplendent city where towers and palaces are adorned with gold and inhabited by people of high lineage. Fabian grew up believing he was part of this elite, but his life was shaken by dark revelations.",
+
+                    "Endowed with a unique power, Fabian can summon and control an electrified iron chain, its end transforming into the head of a serpent capable of striking with lethal precision. His ability is a physical manifestation of his special lineage, one that the government of Aureatia both feared and sought to control.",
+
+                    "Fabian is a man of action, not words. He does not tolerate inefficiency or sloppiness. When he discovered that his true parents had been murdered by the very kingdom that adopted him, Fabian did not succumb to sadness. Instead, his anger turned into relentless determination. He rebelled against the kingdom, confronting its enemies with a ferocity Aureatia had never seen. However, the Court Mage opened a portal and banished Fabian to our world.",
+
+                    "Now, Fabian navigates this new reality, learning its rules and nuances, and seeks a way to return to Aureatia to confront those who betrayed his trust and reclaim his rightful place."
                 ]
             }
         }
