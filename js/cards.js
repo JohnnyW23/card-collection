@@ -283,7 +283,7 @@ cartas = [
     },{
         id: 'card7',
         posicao: '#008',
-        raridade: 'rare',
+        raridade: 'super-rare',
         classe: 'witch',
         nome: 'Kairos Luminar',
         idade: '23',
@@ -294,7 +294,7 @@ cartas = [
         sobre: {
             portugues: {
                 classe: 'Bruxo',
-                raridade: 'Raro',
+                raridade: 'Super-raro',
                 lore: [
                     "Kairos Luminar viveu a juventude como um recluso nas profundezas das florestas de Elorith, lendo pergaminhos antigos, aprendendo sob a tranquilidade das árvores e riachos. A virada de eventos em sua vida surgiu um dia quando ele libertou um bebê dragão refém de caçadores. Com um resgate ousado e prudente sem premeditação, Kairos arriscou tudo para libertar a criatura, enfrentando os caçadores e derrotando-os.",
 
@@ -307,7 +307,7 @@ cartas = [
             },
             ingles: {
                 classe: 'Witch',
-                raridade: 'Rare',
+                raridade: 'Super-Rare',
                 lore: [
                     "Kairos Luminar lived his youth as a recluse in the depths of the forests of Elorith, reading ancient scrolls, learning under the tranquility of the trees and streams. The turning point in his life came one day when he freed a baby dragon held hostage by hunters. With a bold and prudent rescue without forethought, Kairos risked everything to free the creature, facing the hunters and defeating them.",
 
@@ -364,7 +364,7 @@ cartas = [
         }
     },{
         id: 'card9',
-        posicao: '#0010',
+        posicao: '#010',
         raridade: 'super-rare',
         classe: 'fairy',
         nome: 'Becky Flowers',
@@ -440,18 +440,44 @@ cartas = [
                 ]
             }
         }
+    },{
+        id: 'card11',
+        posicao: '#012',
+        raridade: 'rare',
+        classe: 'rogue',
+        nome: 'Senrick Calenor',
+        idade: '21',
+        mensagem: {
+            portugues: "Meus sonhos são os ecos de um futuro onde todos pertencem. Eu caminho na escuridão, não por medo, mas para encontrar a luz que une todos nós. Você crê nisso?",
+            ingles: "My dreams are the echoes of a future where everyone belongs. I walk in the darkness, not out of fear, but to find the light that unites us all. Do you believe in that?"
+        },
+        sobre: {
+            portugues: {
+                classe: 'Ladino',
+                raridade: 'Raro',
+                lore: [
+                    "Senrick Calenor carrega a herança de dois mundos: o sangue humano de seu pai, cuja morte prematura deixou um vazio em sua alma, e a magia élfica de sua mãe, que o criou sob as sombras das árvores milenares da comunidade élfica. Crescer como mestiço foi um desafio; ele era um estranho no ninho, nunca completamente aceito, sempre à margem da sociedade élfica.",
+
+                    "No entanto, Senrick não se deixou abater. Ele tem o poder único de infundir veneno em qualquer objeto que toca. Serick conquistou o respeito relutante dos líderes élficos, pois viram nele não apenas um ladrão habilidoso, mas um agente valioso para suas causas.",
+                    
+                    "Agora, Senrick serve aos elfos em missões secretas: roubar, forjar e recuperar itens de valor incalculável, além de frustrar os planos de criaturas malignas que ameaçam a ordem natural. Ele busca o Cálice da Convergência, um artefato perdido que, segundo as lendas, tem o poder de trazer harmonia entre os povos divididos. Senrick acredita que, com o cálice, ele pode finalmente encontrar seu lugar no mundo como um símbolo de união.",
+                    
+                    "Sua jornada é solitária, mas ele não teme a escuridão. Com cada missão, ele se aproxima do seu destino, movendo-se através das sombras com a leveza de um sussurro e a determinação de um guerreiro. Senrick Calenor, o ladino mestiço, tem um coração que arde com o desejo de pertencer e de transformar o mundo ao seu redor."
+                ]
+            },
+            ingles: {
+                classe: 'Rogue',
+                raridade: 'Rare',
+                lore: [
+                    "Senrick Calenor carries the heritage of two worlds: the human blood of his father, whose premature death left a void in his soul, and the elven magic of his mother, who raised him under the shadows of the ancient trees of the elven community. Growing up as a half-breed was a challenge; he was a stranger in the nest, never fully accepted, always on the fringe of elven society.",
+
+                    "However, Senrick did not let himself be beaten down. He has the unique power to infuse poison into any object he touches. Serick earned the reluctant respect of the elven leaders, as they saw in him not just a skilled thief, but a valuable agent for their causes.",
+
+                    "Now, Senrick serves the elves on secret missions: to steal, forge, and recover items of incalculable value, as well as to thwart the plans of evil creatures that threaten the natural order. He seeks the Chalice of Convergence, a lost artifact that, according to legends, has the power to bring harmony among the divided peoples. Senrick believes that, with the chalice, he can finally find his place in the world as a symbol of unity.",
+
+                    "His journey is solitary, but he does not fear the darkness. With each mission, he gets closer to his destiny, moving through the shadows with the lightness of a whisper and the determination of a warrior. Senrick Calenor, the half-breed rogue, has a heart that burns with the desire to belong and to transform the world around him."
+                ]
+            }
+        }
     }
 ]
-
-
-/*
-
-Dorian Perrusk é filho de uma família de músicos renomados na pequena vila de Emberfall. Ele era mestre em tecer melodias que capturavam a alma dos ouvintes. No entanto, uma inquietação crescia dentro dele; uma convicção de que sua música carregava um propósito maior, uma força capaz de tocar os recônditos mais obscuros da existência.
-
-Em uma noite fatídica, Dorian cruzou caminhos com a Ordem da Retribuição, uma fraternidade secreta de assassinos que operava além das leis dos homens. Eles eram os caçadores de almas corrompidas, e viram em Dorian não apenas um artista de talento, mas uma arma viva para sua causa. A música de Dorian tinha o poder de seduzir e destruir, e a Ordem desejava compor através dele uma sinfonia de vingança.
-
-Abandonando seu lar e herança, Dorian mergulhou em um treinamento implacável sob a tutela da Ordem. Ele se tornou um mestre das lâminas ocultas e dos venenos letais. Cada movimento seu era uma dança com a morte, cada assassinato, uma nota tocada na eterna partitura da justiça.
-
-Sob o disfarce de um músico itinerante, ele infiltra-se nos salões da nobreza, usando sua flauta encantada para desvendar segredos e manipular os fios do poder. Em cada nota, ele tece uma rede de intrigas, e em cada silêncio, ele observa, aguardando o momento de atacar.
-
-Por trás de sua máscara de bardo, Dorian esconde a verdadeira essência de sua alma. Ele é o Ladrão de Segredos, a voz silenciosa da justiça num mundo sufocado pelas trevas, um herói anônimo cuja melodia é o sussurro da retribuição.*/

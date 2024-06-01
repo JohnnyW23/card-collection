@@ -291,7 +291,7 @@ function definirDeck(id){
     
         }else if(id == 'super-rare'){
             ativarTxtShd('fuchsia');
-            deck = cartas
+            transferirCartas(cartas, deck, id)
     
         }else if(id == 'rare'){
             ativarTxtShd('aqua');
