@@ -85,8 +85,8 @@ cartas = [
         nome: 'Rosalyn',
         idade: '126',
         mensagem: {
-            portugues: "Minha vontate ecoa, tão firme quanto as árvores anciãs. Sob o firmamento, prometo que não descansarei até encontrar sua luz perdida, pois em seus abraços, descubro a verdadeira essência da vida.",
-            ingles: 'My will echoes, as steadfast as the ancient trees. Beneath the firmament, I vow not to rest until I find your lost light, for in your embrace, I discover the true essence of life.'
+            portugues: "Minha vontate ecoa, tão firme quanto as árvores anciãs. Sob o firmamento, prometo que não descansarei até encontrar sua luz perdida, pois em seus abraços, descubro a verdadeira essência.",
+            ingles: 'My will echoes, as steadfast as the ancient trees. Beneath the firmament, I vow not to rest until I find your lost light, for in your embrace, I discover the true essence.'
         },
         sobre: {
             portugues: {
@@ -409,8 +409,8 @@ cartas = [
         nome: 'Fabian Temphest',
         idade: '24',
         mensagem: {
-            portugues: 'Em meio às torres douradas e véus de traição, descobri a verdadeira nobreza na força inabalável da justiça. Tua redenção não será encontrada em cortejos, mas sim na forja da vontade indomável.',
-            ingles: "Amidst the gilded towers and veils of treachery, I have discovered true nobility in the unwavering strength of justice. Your redemption shall not be found in processions, but rather in the forge of indomitable will."
+            portugues: 'Em meio aos véus de traição, descobri a real nobreza na força inabalável da justiça. Tua redenção não será encontrada em cortejos, mas sim na vontade indomável.',
+            ingles: "Amidst the  veils of treachery, I have discovered real nobility in the unwavering strength of justice. Your redemption won't be found in processions, but rather in indomitable will."
         },
         sobre: {
             portugues: {
@@ -526,8 +526,8 @@ cartas = [
         nome: 'Wanessa Redwood',
         idade: '20',
         mensagem: {
-            portugues: "A vingança não foi uma escolha, mas meu destino. O eco estrondoso do sacrifício de minha mãe destituiu-lhe de sua luz. Mesmo que você se torne a escuridão em si, meu amor será seu para sempre.",
-            ingles: "Vengeance was not a choice, but my destiny. The thunderous echo of my mother's sacrifice stripped you of your light. Even if you become shadow itself, my love will forever be yours."
+            portugues: "A vingança não foi uma escolha, mas meu fardo. Meu destino destituiu-lhe de sua luz. Mesmo que você se torne a escuridão em si, meu amor por você durará para sempre.",
+            ingles: "Vengeance was not a choice, but my burden. My destiny stripped you of your light. Even if you become shadow itself, my love for you forever will last."
         },
         sobre: {
             portugues: {
