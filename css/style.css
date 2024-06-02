@@ -304,6 +304,7 @@ header .container h1 {
 }
 #retornar {
     cursor: pointer;
+    font-size: 20px;
 }
 
 /***** SESSÃO COLECAO *****/
@@ -347,6 +348,7 @@ header .container h1 {
     color: white;
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 5px 5px 20px black;
+    text-align: justify;
 }
 
 .carta-ordem {

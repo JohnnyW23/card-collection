@@ -122,7 +122,7 @@ function traduzirMain(){
             <br>\
         ');
     };
-    $('.scroll-escritos').append('<img id="retornar" src="assets/svg/voltar.svg" width="20px" style="display: block; margin: 0 auto">');
+    $('.scroll-escritos').append('<i id="retornar" class="fa-solid fa-arrow-right-to-bracket" style="display: block; margin: 0 auto; width: 20px"></i>');
 }
 
 

@@ -1,13 +1,26 @@
 animacao = {
     graus: 180,
     ordemOpen: false,
-    ordemSelect: false
+    ordemSelect: false,
+    cardboxOpen: false
 }
 
 // Essa função gera as cartas e informações da carta dentro de .card-box e .lore, respectivamente, dependendo das informações contidas no parâmetro e dependendo do idioma escolhido
 function construirCartas(object, clear=false){
     for(i = 0; i < object.length; i++){
         let mensagem, info, valor, titulo;
+
+        if(!animacao.cardboxOpen){
+            if(i < 9)
+                object[i].posicao = "#00" + (i + 1)
+            else if(i < 99)
+                object[i].posicao = "#0" + (i + 1)
+            else
+                object[i].posicao = "#" + (i + 1)
+
+            if(i == object.length - 1)
+                animacao.cardboxOpen = true
+        }
 
         if(tela.idioma == 'portugues'){
             mensagem = object[i].mensagem.portugues;

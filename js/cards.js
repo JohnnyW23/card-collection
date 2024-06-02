@@ -1,7 +1,6 @@
 cartas = [
     {
         id: 'card0',
-        posicao: '#001',
         raridade: 'legendary',
         classe: 'vampire',
         nome: 'Johnny Valentine',
@@ -40,7 +39,6 @@ cartas = [
         }
     },{
         id: 'card1',
-        posicao: '#002',
         raridade: 'common',
         classe: 'warrior',
         nome: 'Peter Falkburg',
@@ -79,7 +77,6 @@ cartas = [
         }
     },{
         id: 'card2',
-        posicao: '#003',
         raridade: 'super-rare',
         classe: 'witch',
         nome: 'Rosalyn',
@@ -118,7 +115,6 @@ cartas = [
         }
     },{
         id: 'card3',
-        posicao: '#004',
         raridade: 'common',
         classe: 'fighter',
         nome: 'Dalton Nielsen',
@@ -157,7 +153,6 @@ cartas = [
         }
     },{
         id: 'card4',
-        posicao: '#005',
         raridade: 'rare',
         classe: 'shooter',
         nome: 'Lilith Sharpwind',
@@ -196,7 +191,6 @@ cartas = [
         }
     },{
         id: 'card5',
-        posicao: '#006',
         raridade: 'epic',
         classe: 'rogue',
         nome: 'Dorian Perrusk',
@@ -239,7 +233,6 @@ cartas = [
         }
     },{
         id: 'card6',
-        posicao: '#007',
         raridade: 'common',
         classe: 'warrior',
         nome: 'Edwirges Blackthorn',
@@ -282,7 +275,6 @@ cartas = [
         }
     },{
         id: 'card7',
-        posicao: '#008',
         raridade: 'rare',
         classe: 'witch',
         nome: 'Kairos Luminar',
@@ -321,7 +313,6 @@ cartas = [
         }
     },{
         id: 'card8',
-        posicao: '#009',
         raridade: 'legendary',
         classe: 'fairy',
         nome: 'Elysia Flowers',
@@ -364,7 +355,6 @@ cartas = [
         }
     },{
         id: 'card9',
-        posicao: '#010',
         raridade: 'super-rare',
         classe: 'fairy',
         nome: 'Becky Flowers',
@@ -403,7 +393,6 @@ cartas = [
         }
     },{
         id: 'card10',
-        posicao: '#011',
         raridade: 'epic',
         classe: 'warrior',
         nome: 'Fabian Temphest',
@@ -442,7 +431,6 @@ cartas = [
         }
     },{
         id: 'card11',
-        posicao: '#012',
         raridade: 'rare',
         classe: 'rogue',
         nome: 'Senrick Calenor',
@@ -481,7 +469,6 @@ cartas = [
         }
     },{
         id: 'card12',
-        posicao: '#013',
         raridade: 'legendary',
         classe: 'angel',
         nome: 'Eliel',
@@ -520,7 +507,6 @@ cartas = [
         }
     },{
         id: 'card13',
-        posicao: '#014',
         raridade: 'epic',
         classe: 'witch',
         nome: 'Wanessa Redwood',
@@ -559,7 +545,6 @@ cartas = [
         }
     },{
         id: 'card14',
-        posicao: '#015',
         raridade: 'super-rare',
         classe: 'shooter',
         nome: 'Rodrik Crimson',
