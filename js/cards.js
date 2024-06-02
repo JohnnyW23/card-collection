@@ -245,8 +245,8 @@ cartas = [
         nome: 'Edwirges Blackthorn',
         idade: '25',
         mensagem: {
-            portugues: 'Vagando por terras inférteis, você se vê nessa poeira, cercado por velhos vislumbres arruinados. O que sonhamos nunca é alcançável. Se perdoe por isso e pereça diante minha espada.',
-            ingles: "Wandering through barren lands, you find yourself in this dust, surrounded by old ruined glimpses. What we dream is never attainable. Forgive yourself for it and perish before my sword."
+            portugues: 'Vagando por terras inférteis, você se vê nessa poeira, cercado por velhos vislumbres. O que sonhamos nunca é alcançável. Se perdoe por isso e pereça diante minha espada.',
+            ingles: "Wandering through barren lands, you find yourself in this dust, surrounded by old glimpses. What we dream is never attainable. Forgive yourself for it and perish before my sword."
         },
         sobre: {
             portugues: {
