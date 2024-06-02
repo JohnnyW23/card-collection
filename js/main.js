@@ -99,15 +99,15 @@ $('.idiomas img').click(function(){
 
 // Inserção do conteúdo escrito na tela principal
 function traduzirMain(){
-    $('#sobre .sessao-descricao').append('\
+    $('#sobre .secao-descricao').append('\
         <h2>' + traducao.sobre[0] + '</h2>\
         <p>' + traducao.sobre[1] + '</p>\
     ');
-    $('#colecao .sessao-descricao').append('\
+    $('#colecao .secao-descricao').append('\
         <h2>' + traducao.colecao[0] + '</h2>\
         <p>' + traducao.colecao[1] + '</p>\
     ');
-    $('#github .sessao-descricao').append('\
+    $('#github .secao-descricao').append('\
         <h2>' + traducao.github[0] + '</h2>\
         <p>' + traducao.github[1] + '</p>\
     ');

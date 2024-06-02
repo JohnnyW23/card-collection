@@ -20,7 +20,7 @@ html, body {
     src: url(../fonts/BreatheFireIii-PKLOB.ttf);
 }
 
-/***** SESSAO IDIOMAS *****/
+/***** SECAO IDIOMAS *****/
 
 
 .idiomas-wraper {
@@ -111,7 +111,7 @@ header .container h1 {
 }
 
 
-/***** SESSAO DA TELA PRINCIPAL MAIN *****/
+/***** SECAO DA TELA PRINCIPAL MAIN *****/
 
 
 .main-wraper {
@@ -158,7 +158,7 @@ header .container h1 {
     gap: 1em;
     transition: grid-template-columns .5s;
 }
-.sessao {
+.secao {
     width: 100%;
     height: 100%;
     transform: skewY(5deg);
@@ -166,7 +166,7 @@ header .container h1 {
     cursor: pointer;
     position: relative;
 }
-.sessao::before {
+.secao::before {
     content: '';
     position: absolute;
     top: 0;
@@ -190,11 +190,11 @@ header .container h1 {
     background-image: url(../assets/bg-main/github-bg.jpeg);
 }
 
-.sessao-img {
+.secao-img {
     width: 100%;
     height: 100%;
 }
-.sessao-descricao {
+.secao-descricao {
     width: 100%;
     height: 30%;
     background-color: black;
@@ -208,18 +208,18 @@ header .container h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr;
 }
-.sessao-descricao h2 {
+.secao-descricao h2 {
     font-size: 37px;
     margin-bottom: 10px;
     padding: 5px;
     background-color: #111;
 }
-.sessao-descricao p {
+.secao-descricao p {
     font-size: 25px;
     padding: 10px;
 }
 
-/***** SESSAO SOBRE O PROJETO *****/
+/***** SECAO SOBRE O PROJETO *****/
 
 .sobre {
     width: 100%;
@@ -712,21 +712,21 @@ footer .container {
 }
 
 @media screen and (max-width: 1024px) {
-    .sessao {
+    .secao {
         overflow: visible;
         height: 70%;
     }
-    .sessao::before {
+    .secao::before {
         filter: none;
     }
-    .sessao-descricao {
+    .secao-descricao {
         height: 45%;
         bottom: -45%;
     }
-    .sessao-descricao h2 {
+    .secao-descricao h2 {
         font-size: 25px;
     }
-    .sessao-descricao p {
+    .secao-descricao p {
         font-size: 16px;
     }
     .scroll-escritos-wraper {
@@ -751,13 +751,13 @@ footer .container {
 
 
 @media screen and (min-width: 1024px) {
-    .sessao:hover .sessao-descricao {
+    .secao:hover .secao-descricao {
         bottom: 0;
     }
-    .sessoes:has(.sessao:hover) .sessao:not(:hover)::before {
+    .sessoes:has(.secao:hover) .secao:not(:hover)::before {
         filter: grayscale(100%) brightness(60%);
     }
-    .sessao:hover::before {
+    .secao:hover::before {
         scale: 1.3;
         transition: scale 5s linear, filter .5s ease;
     }
@@ -869,16 +869,16 @@ footer .container {
         height: 800px;
         grid-template-columns: 1fr;
     }
-    .sessao-descricao {
+    .secao-descricao {
         display: flex;
     }
-    .sessao-descricao h2 {
+    .secao-descricao h2 {
         font-size: 16px;
         width: 30%;
         height: 100%;
         align-content: center;
     }
-    .sessao-descricao p {
+    .secao-descricao p {
         font-size: 14px;
         width: 70%;
         align-content: center;
