@@ -41,7 +41,7 @@ cartas = [
     },{
         id: 'card1',
         posicao: '#002',
-        raridade: 'rare',
+        raridade: 'common',
         classe: 'warrior',
         nome: 'Peter Falkburg',
         idade: '27',
@@ -52,7 +52,7 @@ cartas = [
         sobre: {
             portugues: {
                 classe: 'Guerreiro',
-                raridade: 'Raro',
+                raridade: 'Comum',
                 lore: [
                     'Peter Falkburg é um homem cuja juventude foi moldada pelas agruras de um campo de batalha. Ele testemunhou a morte de amigos e inimigos, sentiu o peso da espada em suas mãos e viu a humanidade se despedaçar sob o fogo da guerra. No entanto, sua alma anseia por algo mais do que o clangor das armas e o cheiro de sangue.',
 
@@ -65,7 +65,7 @@ cartas = [
             },
             ingles: {
                 classe: 'Warrior',
-                raridade: 'Rare',
+                raridade: 'Common',
                 lore: [
                     "Peter Falkburg is a man whose youth was shaped by the hardships of the battlefield. He witnessed the deaths of friends and foes, felt the weight of the sword in his hands, and saw humanity shatter under the fire of war. However, his soul longs for something beyond the clangor of weapons and the smell of blood.",
 
@@ -80,6 +80,45 @@ cartas = [
     },{
         id: 'card2',
         posicao: '#003',
+        raridade: 'super-rare',
+        classe: 'witch',
+        nome: 'Rosalyn',
+        idade: '126',
+        mensagem: {
+            portugues: "Minha vontate ecoa, tão firme quanto as árvores anciãs. Sob o firmamento, prometo que não descansarei até encontrar sua luz perdida, pois em seus abraços, descubro a verdadeira essência da vida.",
+            ingles: 'My will echoes, as steadfast as the ancient trees. Beneath the firmament, I vow not to rest until I find your lost light, for in your embrace, I discover the true essence of life.'
+        },
+        sobre: {
+            portugues: {
+                classe: 'Bruxa',
+                raridade: 'Super-raro',
+                lore: [
+                    'Rosalyn é uma druida que vive na antiga e encantada floresta de Eldergrove. Ela tem 126 anos, mas sua energia é equivalente à de uma jovem, e sua conexão com a natureza tem raízes mais profundas do que se pode perceber. Ela fala abertamente com plantas e animais. Seu cajado, chamado Etherlight, é esculpido a partir de um lendário carvalho e incrustado com uma esmeralda. Ele é tanto sua ferramenta quanto seu companheiro.',
+
+                    'É entusiasta da vida e de tudo relacionado: desde o orvalho nas folhas até a migração das aves. Ela é firme como uma tempestade contra qualquer ameaça à sua casa em Eldergrove. Com a mesma determinação, Rosalyn busca pelo destino de sua mãe desaparecida.',
+                    
+                    'A história de Rosalyn é repleta de triunfos e tragédias. Ela literalmente viu o Templo de Cristal desmoronar durante a Guerra das Sombras e testemunhou o surgimento e a queda de reinos. Sua busca por respostas sobre o destino de sua mãe a levou por muitas missões, algumas até os postos mais distantes do mundo conhecido.',
+                    
+                    'No entanto, Rosalyn está determinada na busca pelo Mistério do Crepúsculo Eterno — a profecia que prevê o fim dos tempos quando a luz e a escuridão se encontram, e a partir deles surge uma nova era para Eldergrove e o mundo — acreditando profundamente que essa sabedoria antiga detém a chave para salvar sua casa e encontrar sua mãe.'
+                ]
+            },
+            ingles: {
+                classe: 'Witch',
+                raridade: 'Super-rare',
+                lore: [
+                    "Rosalyn is a druid, living in the ancient, enchanted forest of Eldergrove. She is 126 herself, but her energy equals that of a youth, and her connection with nature has roots deeper than one could ever notice. She speaks openly with plants and animals alike. Her staff, called Etherlight, is carved from a legendary oak tree and inlaid with an emerald. It is both her tool and companion.",
+
+                    "She's enthusiastic about life and everything related: from dew on leaves to bird migration. She is solid like a storm against any threat to her home in Eldergrove. With the same drive, she keeps looking for her missing mother's fate.",
+                    
+                    "Rosalyn's history is filled with triumphs and tragedies. She had literally seen the Crystal Temple crashing during the War of Shadows and witnessed the rise and fall of kingdoms. Her search for answers about her mother's destiny led her through many quests, some to the farthest outposts of the known world.",
+                    
+                    "Rosalyn, though, is set on the quest for the Mystery of Eternal Twilight—the prophecy foretelling the end of time when light and darkness meet, and from them rings in an entire new age for Eldergrove and the world—believing deep within that this ancient wisdom holds the key to saving her home and finding her mother."
+                ]
+            }
+        }
+    },{
+        id: 'card3',
+        posicao: '#004',
         raridade: 'common',
         classe: 'fighter',
         nome: 'Dalton Nielsen',
@@ -113,45 +152,6 @@ cartas = [
                     "In the small apartment above the old boxing academy, Dalton trains tirelessly. His fists, infused with magic, deliver blows that go beyond the physical. He seeks to enhance his magical abilities, knowing that true victory lies not only in the glory of the ring but also in the hope he can bring to the underprivileged.",
 
                     "The worn walls bear witness to his daily efforts. Dalton dreams of a future where the streets are no longer his battlefield, where his magic can illuminate dark hearts and offer a chance at redemption."
-                ]
-            }
-        }
-    },{
-        id: 'card3',
-        posicao: '#004',
-        raridade: 'super-rare',
-        classe: 'witch',
-        nome: 'Rosalyn',
-        idade: '126',
-        mensagem: {
-            portugues: "Minha vontate ecoa, tão firme quanto as árvores anciãs. Sob o firmamento, prometo que não descansarei até encontrar sua luz perdida, pois em seus abraços, descubro a verdadeira essência da vida.",
-            ingles: 'My will echoes, as steadfast as the ancient trees. Beneath the firmament, I vow not to rest until I find your lost light, for in your embrace, I discover the true essence of life.'
-        },
-        sobre: {
-            portugues: {
-                classe: 'Bruxa',
-                raridade: 'Super-raro',
-                lore: [
-                    'Rosalyn é uma druida que vive na antiga e encantada floresta de Eldergrove. Ela tem 125 anos, mas sua energia é equivalente à de uma jovem, e sua conexão com a natureza tem raízes mais profundas do que se pode perceber. Ela fala abertamente com plantas e animais. Seu cajado, chamado Etherlight, é esculpido a partir de um lendário carvalho e incrustado com uma esmeralda. Ele é tanto sua ferramenta quanto seu companheiro.',
-
-                    'É entusiasta da vida e de tudo relacionado: desde o orvalho nas folhas até a migração das aves. Ela é firme como uma tempestade contra qualquer ameaça à sua casa em Eldergrove. Com a mesma determinação, Rosalyn busca pelo destino de sua mãe desaparecida.',
-                    
-                    'A história de Rosalyn é repleta de triunfos e tragédias. Ela literalmente viu o Templo de Cristal desmoronar durante a Guerra das Sombras e testemunhou o surgimento e a queda de reinos. Sua busca por respostas sobre o destino de sua mãe a levou por muitas missões, algumas até os postos mais distantes do mundo conhecido.',
-                    
-                    'No entanto, Rosalyn está determinada na busca pelo Mistério do Crepúsculo Eterno — a profecia que prevê o fim dos tempos quando a luz e a escuridão se encontram, e a partir deles surge uma nova era para Eldergrove e o mundo — acreditando profundamente que essa sabedoria antiga detém a chave para salvar sua casa e encontrar sua mãe.'
-                ]
-            },
-            ingles: {
-                classe: 'Witch',
-                raridade: 'Super-rare',
-                lore: [
-                    "Rosalyn is a druid, living in the ancient, enchanted forest of Eldergrove. She is 125 herself, so her energy equals that of a youth, and her connection with nature has roots deeper than one could ever notice. She speaks openly with plants and animals alike. Her staff, called Etherlight, is carved from a legendary oak tree and inlaid with an emerald. It is both her tool and companion.",
-
-                    "She's enthusiastic about life and everything related: from dew on leaves to bird migration. She is solid like a storm against any threat to her home in Eldergrove. With the same drive, she keeps looking for her missing mother's fate.",
-                    
-                    "Rosalyn's history is filled with triumphs and tragedies. She had literally seen the Crystal Temple crashing during the War of Shadows and witnessed the rise and fall of kingdoms. Her search for answers about her mother's destiny led her through many quests, some to the farthest outposts of the known world.",
-                    
-                    "Rosalyn, though, is set on the quest for the Mystery of Eternal Twilight—the prophecy foretelling the end of time when light and darkness meet, and from them rings in an entire new age for Eldergrove and the world—believing deep within that this ancient wisdom holds the key to saving her home and finding her mother."
                 ]
             }
         }
@@ -283,7 +283,7 @@ cartas = [
     },{
         id: 'card7',
         posicao: '#008',
-        raridade: 'super-rare',
+        raridade: 'rare',
         classe: 'witch',
         nome: 'Kairos Luminar',
         idade: '23',
@@ -294,7 +294,7 @@ cartas = [
         sobre: {
             portugues: {
                 classe: 'Bruxo',
-                raridade: 'Super-raro',
+                raridade: 'Raro',
                 lore: [
                     "Kairos Luminar viveu a juventude como um recluso nas profundezas das florestas de Elorith, lendo pergaminhos antigos, aprendendo sob a tranquilidade das árvores e riachos. A virada de eventos em sua vida surgiu um dia quando ele libertou um bebê dragão refém de caçadores. Com um resgate ousado e prudente sem premeditação, Kairos arriscou tudo para libertar a criatura, enfrentando os caçadores e derrotando-os.",
 
@@ -307,7 +307,7 @@ cartas = [
             },
             ingles: {
                 classe: 'Witch',
-                raridade: 'Super-Rare',
+                raridade: 'Rare',
                 lore: [
                     "Kairos Luminar lived his youth as a recluse in the depths of the forests of Elorith, reading ancient scrolls, learning under the tranquility of the trees and streams. The turning point in his life came one day when he freed a baby dragon held hostage by hunters. With a bold and prudent rescue without forethought, Kairos risked everything to free the creature, facing the hunters and defeating them.",
 
@@ -448,8 +448,8 @@ cartas = [
         nome: 'Senrick Calenor',
         idade: '21',
         mensagem: {
-            portugues: "Meus sonhos são os ecos de um futuro onde todos pertencem. Eu caminho na escuridão, não por medo, mas para encontrar a luz que une todos nós. Você crê nisso?",
-            ingles: "My dreams are the echoes of a future where everyone belongs. I walk in the darkness, not out of fear, but to find the light that unites us all. Do you believe in that?"
+            portugues: "Meus sonhos são os ecos de um futuro onde todos pertencem. Eu caminho na escuridão, sem medo, para encontrar a luz que une todos nós. Você crê na força da vontade de um mero mestiço?",
+            ingles: "My dreams are the echoes of a future where everyone belongs. I walk in the darkness, fearless, to find the light that unites us all. Do you believe in the willpower of a mere half-breed?"
         },
         sobre: {
             portugues: {
@@ -476,6 +476,123 @@ cartas = [
                     "Now, Senrick serves the elves on secret missions: to steal, forge, and recover items of incalculable value, as well as to thwart the plans of evil creatures that threaten the natural order. He seeks the Chalice of Convergence, a lost artifact that, according to legends, has the power to bring harmony among the divided peoples. Senrick believes that, with the chalice, he can finally find his place in the world as a symbol of unity.",
 
                     "His journey is solitary, but he does not fear the darkness. With each mission, he gets closer to his destiny, moving through the shadows with the lightness of a whisper and the determination of a warrior. Senrick Calenor, the half-breed rogue, has a heart that burns with the desire to belong and to transform the world around him."
+                ]
+            }
+        }
+    },{
+        id: 'card12',
+        posicao: '#013',
+        raridade: 'legendary',
+        classe: 'angel',
+        nome: 'Eliel',
+        idade: '3500',
+        mensagem: {
+            portugues: "Encontrei a verdadeira essência do amor em um coração terreno. Ai de mim! Longe de você, meu coração é inconsolável. Devo amar-te como as estações, ou como um eterno dia de verão?",
+            ingles: "I found the true essence of love in an earthly heart. Alas! Poor me! Far from you, my heart is inconsolable. Should I love you as the seasons, or as an eternal summer day?"
+        },
+        sobre: {
+            portugues: {
+                classe: 'Anjo',
+                raridade: 'Lendário',
+                lore: [
+                    "Eliel é a personificação da compaixão e do dever, com uma presença que irradia uma aura de cuidado e proteção. Ele é conhecido entre os anjos por sua dedicação incansável aos outros e seu altruísmo sem limites. Mas sua existência tomou um rumo inesperado quando ele se viu envolto em um amor proibido com Wanessa, uma bruxa de espírito livre e coração valente.",
+                    
+                    "Pela primeira vez em sua vida, por mais que tenha negado por anos, Eliel sentiu paixão tal que nenhum ser celestial jamais havia conseguido provocar nele. Quando bruxos malignos ameaçaram a vida de Wanessa, Eliel quebrou o sagrado código celestial para salvá-la, tornando-se assim um anjo caído.",
+                    
+                    "Agora, Eliel enfrenta uma penitência árdua: ele deve servir como ceifador dos homens justos, eliminando a vida de cem mil criaturas fiéis aos anjos, cortando os fios de seus destinos assim que o momento for apropriado. Eliel sentiu desespero pela primeira vez ao receber a sentença, pois seu amor pelas criaturas terrenas o faz preferir interferir para o bem, e não para o mal.",
+                    
+                    "O dilema de Eliel é palpável: seu coração ainda pertence a Wanessa, mas seu dever o chama de volta aos céus. A paixão que ele sente por ela é tão ardente quanto as estrelas, mas a saudade de seu lar celestial é uma melodia silenciosa que ressoa em sua alma. Ele está dividido entre dois mundos, lutando para encontrar um caminho que possa reconciliar seu amor proibido com sua essência angelical."
+                ]
+            },
+            ingles: {
+                classe: 'Angel',
+                raridade: 'Legendary',
+                lore: [
+                    "Eliel is the personification of compassion and duty, with a presence that radiates an aura of care and protection. He is known among the angels for his tireless dedication to others and his boundless altruism. But his existence took an unexpected turn when he found himself wrapped in a forbidden love with Wanessa, a free-spirited witch with a brave heart.",
+
+                    "For the first time in history, despite having denied it for years, Eliel felt a passion that no celestial being had ever been able to provoke in him. When evil witches threatened Wanessa's life, Eliel broke the sacred celestial code to save her, thus becoming a fallen angel.",
+                    
+                    "Now, Eliel faces a harsh penance: he must serve as the reaper of righteous men, eliminating the lives of a hundred thousand creatures faithful to the angels, cutting the threads of their destinies as soon as the moment is appropriate. Eliel felt despair for the first time upon receiving the sentence, as his love for earthly creatures makes him prefer to interfere for good, not for evil.",
+                    
+                    "Eliel's dilemma is palpable: his heart still belongs to Wanessa, but his duty calls him back to the heavens. The passion he feels for her is as burning as the stars, but the longing for his celestial home is a silent melody that resonates in his soul. He is torn between two worlds, struggling to find a path that can reconcile his forbidden love with his angelic essence."
+                ]
+            }
+        }
+    },{
+        id: 'card13',
+        posicao: '#014',
+        raridade: 'epic',
+        classe: 'witch',
+        nome: 'Wanessa Redwood',
+        idade: '20',
+        mensagem: {
+            portugues: "A vingança não foi uma escolha, mas meu destino. O eco estrondoso do sacrifício de minha mãe destituiu-lhe de sua luz. Mesmo que você se torne a escuridão em si, meu amor será seu para sempre.",
+            ingles: "Vengeance was not a choice, but my destiny. The thunderous echo of my mother's sacrifice stripped you of your light. Even if you become shadow itself, my love will forever be yours."
+        },
+        sobre: {
+            portugues: {
+                classe: 'Bruxa',
+                raridade: 'Épico',
+                lore: [
+                    "Wanessa Redwood é uma figura observadora e silenciosa que habita uma cabana isolada numa densa floresta. Desde tenra idade, foi marcada pela tragédia. Sua mãe, uma bruxa de renome e bondade, caiu nas mãos de um grupo de bruxos chamado \"Círculo do Crepúsculo\", que buscava erradicar qualquer um que se opusesse a seus planos sombrios. Wanessa, ainda criança, foi forçada a se esconder enquanto testemunhava o sacrifício final de sua mãe, que lutou bravamente, mas foi superada.",
+                    
+                    "Crescendo com o fogo da vingança queimando em seu coração, Wanessa dedicou sua vida ao estudo das artes mágicas. Ela se tornou uma mestra em feitiços destrutivos e poções para vingar sua mãe. Quando finalmente pôde confrontar o grupo de bruxos com inabalável fúria, ela estava prestes a enfrentar o mesmo destino que sua mãe. Seu poder ainda não era suficiente.",
+                    
+                    "Foi então que Eliel, o anjo que a observava em segredo, não pôde mais ficar à margem. Descendo em um vórtice de luz celestial, ele interveio, sua espada flamejante cortando as trevas, concebendo uma batalha feroz. Eliel conseguiu salvar Wanessa, mas a um custo terrível: foi banido dos céus, sob uma pesarosa condenação.",
+                    
+                    "Agora, Wanessa vive com a memória de sua mãe e a gratidão por Eliel, cujo sacrifício lhe deu uma segunda chance. Ela constantemente persegue Eliel por meio de viagem astral. Seu amor pelo anjo cresce a cada dia, mesmo que ele não possa ceder à sua paixão. Por enquanto."
+                ]
+            },
+            ingles: {
+                classe: 'Witch',
+                raridade: 'Epic',
+                lore: [
+                    "Wanessa Redwood is an observant and silent figure who inhabits a secluded cabin in a dense forest. From an early age, she was marked by tragedy. Her mother, a renowned and kind witch, fell into the hands of a group of witches called the \"Twilight Circle\", who sought to eradicate anyone who opposed their dark plans. Wanessa, still a child, was forced to hide while witnessing her mother's final sacrifice, who fought bravely but was overcome.",
+
+                    "Growing up with the fire of revenge burning in her heart, Wanessa dedicated her life to the study of magical arts. She became a master in destructive spells and potions to avenge her mother. When she was finally able to confront the group of witches with unwavering fury, she was about to face the same fate as her mother. Her power was still not enough.",
+
+                    "It was then that Eliel, the angel who had been watching her in secret, could no longer stand by. Descending in a vortex of celestial light, he intervened, his flaming sword cutting through the darkness, conceiving a fierce battle. Eliel managed to save Wanessa, but at a terrible cost: he was banished from the heavens, under a sorrowful condemnation.",
+
+                    "Now, Wanessa lives with the memory of her mother and gratitude for Eliel, whose sacrifice gave her a second chance. She constantly pursues Eliel through astral travel. Her love for the angel grows every day, even though he cannot yield to her passion. For now."
+                ]
+            }
+        }
+    },{
+        id: 'card14',
+        posicao: '#015',
+        raridade: 'super-rare',
+        classe: 'shooter',
+        nome: 'Rodrik Crimson',
+        idade: '27',
+        mensagem: {
+            portugues: "Não há tempestade que possa abalar meu espírito, nem inimigo que possa conter minha coragem. Minha alma anseia pelo sabor das aventuras inexploradas, a cada novo horizonte.",
+            ingles: "There is no storm that can shake my spirit, nor enemy that can contain my courage. My soul yearns for the taste of unexplored adventures, at each new horizon."
+        },
+        sobre: {
+            portugues: {
+                classe: 'Atirador',
+                raridade: 'Super-raro',
+                lore: [
+                    "Rodrik Crimson, o destemido capitão do navio \"O Desbravador\", tem um espírito aventureiro e uma sede insaciável por desafios. Seu carisma e coragem são tão contagiantes quanto seu sorriso confiante, que raramente deixa seu rosto, mesmo diante do perigo.",
+                    
+                    "Armado com suas pistolas mágicas de munição infinita, \"Maré Alta\" e \"Tempestade Carmesim\", Rodrik é um mestre do combate à distância, disparando projéteis que incendeiam seus alvos sem misericórdia. Ele é tão corajoso que, uma vez, após uma gloriosa caçada ao tesouro, Rodrik e sua leal tripulação enfrentavam uma tempestade feroz que rugia ao redor deles. De repente, seu marinheiro mais fiel foi tragado pelas ondas revoltas.",
+
+                    "Sem hesitar, Rodrik mergulhou nas profundezas tempestuosas, determinado a salvar seu camarada. A tripulação observava, com admiração e apreensão, enquanto lançava uma corda para seu capitão, que lutava contra a fúria do mar. Contra todas as probabilidades, Rodrik emergiu das ondas, trazendo consigo o marinheiro salvo.",
+                    
+                    "Com tantas aventuras para contar, o objetivo de Rodrik vai além da busca por tesouros e riquezas. Sua jornada é movida pela paixão de explorar o desconhecido e pelo desejo de deixar seu nome marcado na história como o maior pirata que já navegou pelos sete mares."
+                ]
+            },
+            ingles: {
+                classe: 'Shooter',
+                raridade: 'Super-rare',
+                lore: [
+                    "Rodrik Crimson, the fearless captain of the ship \"The Pathfinder\", has an adventurous spirit and an insatiable thirst for challenges. His charisma and courage are as contagious as his confident smile, which rarely leaves his face, even in the face of danger.",
+
+                    "Armed with his magical pistols of infinite ammunition, \"High Tide\" and \"Crimson Storm\", Rodrik is a master of long-range combat, firing projectiles that set his targets ablaze without mercy. He is so brave that, once, after a glorious treasure hunt, Rodrik and his loyal crew were facing a fierce storm that roared around them. Suddenly, his most faithful sailor was swallowed by the raging waves.",
+
+                    "Without hesitation, Rodrik plunged into the stormy depths, determined to save his comrade. The crew watched, with admiration and apprehension, as they threw a rope to their captain, who was battling the fury of the sea. Against all odds, Rodrik emerged from the waves, bringing with him the saved sailor.",
+
+                    "With so many adventures to tell, Rodrik’s goal goes beyond the search for treasures and riches. His journey is driven by the passion to explore the unknown and by the desire to leave his name marked in history as the greatest pirate who ever sailed the seven seas."
                 ]
             }
         }

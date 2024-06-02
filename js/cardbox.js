@@ -1,23 +1,23 @@
 animacao = {
     graus: 180,
     ordemOpen: false,
-    ordemSlct: false
+    ordemSelect: false
 }
 
 // Essa função gera as cartas e informações da carta dentro de .card-box e .lore, respectivamente, dependendo das informações contidas no parâmetro e dependendo do idioma escolhido
-function construirCartas(obj, clear=false){
-    for(i = 0; i < obj.length; i++){
+function construirCartas(object, clear=false){
+    for(i = 0; i < object.length; i++){
         let mensagem, info, valor, titulo;
 
         if(tela.idioma == 'portugues'){
-            mensagem = obj[i].mensagem.portugues;
-            valor = obj[i].sobre.portugues
+            mensagem = object[i].mensagem.portugues;
+            valor = object[i].sobre.portugues
             info = ['Nome: ', 'Idade: ', 'Classe: ', 'Raridade: '];
             titulo = 'INFORMAÇÕES DA CARTA'
 
         }else if(tela.idioma == 'ingles'){
-            mensagem = obj[i].mensagem.ingles;
-            valor = obj[i].sobre.ingles;
+            mensagem = object[i].mensagem.ingles;
+            valor = object[i].sobre.ingles;
             info = ['Name: ', 'Age: ', 'Class: ', 'Rarity: '],
             titulo = 'CARD INFO'
         }
@@ -25,13 +25,13 @@ function construirCartas(obj, clear=false){
         $('.card-box').append('\
         <div class="carta-wraper">\
             <div class="carta">\
-                <div class="carta-info-wrap ' + obj[i].raridade + '">\
-                    <div class="carta-back" style="background-image: url(../assets/card-back/' + obj[i].classe + '.jpg)">\
+                <div class="carta-info-wrap ' + object[i].raridade + '">\
+                    <div class="carta-back" style="background-image: url(../assets/card-back/' + object[i].classe + '.jpg)">\
                         <div class="carta-back-brilho"></div>\
                     </div>\
-                    <div class="carta-img" id="' + obj[i].id + '" style="background-image: url(../assets/card-front/' + obj[i].id + '.jpg)">\
+                    <div class="carta-img" id="' + object[i].id + '" style="background-image: url(../assets/card-front/' + object[i].id + '.jpg)">\
                         <div class="carta-img-brilho"></div>\
-                        <h3 class="carta-nome ' + obj[i].raridade + '">' + obj[i].nome + '</h3>\
+                        <h3 class="carta-nome ' + object[i].raridade + '">' + object[i].nome + '</h3>\
                     </div>\
                     <div class="card-divider"></div>\
                     <div class="carta-status">\
@@ -42,11 +42,11 @@ function construirCartas(obj, clear=false){
         </div>')
 
         $('.lore').append('\
-            <div id="' + obj[i].id + '" style="display: none">\
-                <h1 style="text-align: center">' + titulo + ' ' + obj[i].posicao + '</h1><br>\
-                <span style="font-weight: 800">' + info[0] + '</span><span>' + obj[i].nome + '</span>\
+            <div id="' + object[i].id + '" style="display: none">\
+                <h1 style="text-align: center">' + titulo + ' ' + object[i].posicao + '</h1><br>\
+                <span style="font-weight: 800">' + info[0] + '</span><span>' + object[i].nome + '</span>\
                 <br>\
-                <span style="font-weight: 800">' + info[1] + '</span><span>' + obj[i].idade + '</span>\
+                <span style="font-weight: 800">' + info[1] + '</span><span>' + object[i].idade + '</span>\
                 <br>\
                 <span style="font-weight: 800">' + info[2] + '</span><span>' + valor.classe + '</span>\
                 <br>\
@@ -56,14 +56,14 @@ function construirCartas(obj, clear=false){
         ')
 
         for(l = 0; l < valor.lore.length; l++){
-            $('.lore div#' + obj[i].id).append('\
+            $('.lore div#' + object[i].id).append('\
                 <br>\
                 <p>' + valor.lore[l] + '</p>\
             ')
         }
     }
 
-    $('.bg-img').css('background-image', 'url(assets/bg/' + obj[0].id + '.jpg)');
+    $('.bg-img').css('background-image', 'url(assets/bg/' + object[0].id + '.jpg)');
 
     $('.carta-wraper').eq(0).addClass('selected');
     $('.carta-wraper').eq(1).addClass('next');
@@ -223,9 +223,9 @@ $('.carta-ordem').click(function(){
 
 // Função que determina qual ordem/raridade visualizar
 $('.ordem-opcoes li').click(function(){
-    if(!animacao.ordemSlct && tela.colecao){
-        animacao.ordemSlct = true
-        setTimeout(() => {animacao.ordemSlct = false}, 1000);
+    if(!animacao.ordemSelect && tela.colecao){
+        animacao.ordemSelect = true
+        setTimeout(() => {animacao.ordemSelect = false}, 1000);
 
         if($(this).is(':not(.ordem-selected)')){
             $('.ordem-selected').css('text-shadow', 'none');
@@ -239,18 +239,18 @@ $('.ordem-opcoes li').click(function(){
 })
 
 // Função que criará uma nova lista de deck das cartas, a depender da raridade escolhida
-function transferirCartas(obj, newDeck, raridade){
-    for(i = 0; i < obj.length; i++){
-        if(obj[i].raridade == raridade){
-            newDeck.push(obj[i])
+function transferirCartas(object, newDeck, raridade){
+    for(i = 0; i < object.length; i++){
+        if(object[i].raridade == raridade){
+            newDeck.push(object[i])
         }
     }
 }
 
 // Função que evita repetição nas ordens "crescente" e "decrescente de visualização"
-function iterarRaridade(obj, newDeck, lista){
+function iterarRaridade(object, newDeck, lista){
     for(c = 0; c < lista.length; c++){
-        transferirCartas(obj, newDeck, lista[c])
+        transferirCartas(object, newDeck, lista[c])
     }
 }
 
@@ -263,48 +263,42 @@ function definirDeck(id){
     let deck = []
     let crescente = ['legendary', 'epic', 'super-rare', 'rare', 'common']
 
-    if(id == 'todas'){
+    if(!crescente.includes(id)){
         ativarTxtShd('white');
-        deck = cartas
-
-    }else if(id == 'crescente'){
-        ativarTxtShd('white')
-        iterarRaridade(cartas, deck, crescente);
-
-    }else if(id == 'decrescente'){
-        ativarTxtShd('white');
-        crescente.reverse();
-        iterarRaridade(cartas, deck, crescente);
-
-    }else if(id == 'reverse'){
-        ativarTxtShd('white');
-        deck = cartas.slice().reverse();
+        
+        if(id == 'todas'){
+            deck = cartas
+    
+        }else if(id == 'crescente'){
+            iterarRaridade(cartas, deck, crescente);
+    
+        }else if(id == 'decrescente'){
+            crescente.reverse();
+            iterarRaridade(cartas, deck, crescente);
+    
+        }else if(id == 'reverse'){
+            deck = cartas.slice().reverse();
+        }
 
     }else{
         if(id == 'legendary'){
             ativarTxtShd('gold');
-            deck = cartas
     
         }else if(id == 'epic'){
             ativarTxtShd('red');
-            deck = cartas
     
         }else if(id == 'super-rare'){
             ativarTxtShd('fuchsia');
-            transferirCartas(cartas, deck, id)
     
         }else if(id == 'rare'){
             ativarTxtShd('aqua');
-            transferirCartas(cartas, deck, id)
     
         }else if(id == 'common'){
             ativarTxtShd('grey');
-            deck = cartas
         }
 
-
+        transferirCartas(cartas, deck, id);
     }
-
     $('.card-box').html('');
     $('.lore').html('');
     construirCartas(deck, true);
