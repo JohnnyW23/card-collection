@@ -39,10 +39,10 @@ function construirCartas(object, clear=false){
         <div class="carta-wraper">\
             <div class="carta">\
                 <div class="carta-info-wrap ' + object[i].raridade + '">\
-                    <div class="carta-back" style="background-image: url(../assets/card-back/' + object[i].classe + '.jpg)">\
+                    <div class="carta-back" style="background-image: url(assets/card-back/' + object[i].classe + '.jpg)">\
                         <div class="carta-back-brilho"></div>\
                     </div>\
-                    <div class="carta-img" id="' + object[i].id + '" style="background-image: url(../assets/card-front/' + object[i].id + '.jpg)">\
+                    <div class="carta-img" id="' + object[i].id + '" style="background-image: url(assets/card-front/' + object[i].id + '.jpg)">\
                         <div class="carta-img-brilho"></div>\
                         <h3 class="carta-nome ' + object[i].raridade + '">' + object[i].nome + '</h3>\
                     </div>\
